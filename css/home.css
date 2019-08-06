@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  padding: 18px !important;
+  padding: 18px;
   background: white;
   -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
   transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
@@ -176,8 +176,9 @@
   padding-bottom: 15px;
 }
 
-#statistics p .lead {
-  font-size: 1.5rem;
+#statistics .lead {
+  font-size: 20px;
+  text-align: center;
 }
 
 #statistics .white-border {
@@ -411,12 +412,13 @@
     background-color: #f0f0f0;
     border: 1px solid #aaaaaa;
     border-radius: 0.25rem;
+    margin-right: 20px;
   }
   .navbar-collapse {
     margin-top: 20px;
   }
   .navbar .logo-container img {
-    margin-left: -30px;
+    margin-left: -20px;
   }
   .navbar .nav-item a {
     text-align: left;

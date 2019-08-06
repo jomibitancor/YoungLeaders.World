@@ -2,7 +2,7 @@ $primary: #26b3bf;
 $gray: #F5F2F2;
 
 .navbar{
-  padding: 18px !important;
+  padding: 18px;
   background: white;
   transition: all 1s cubic-bezier(.61,.2,.43,.99);
   font-family: 'Raleway', sans-serif;
@@ -258,84 +258,82 @@ strong{
     color: white;
     background:black;
     text-align: center;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+
+  p{
+    font-size: 16px;
+  }
+  .navbar-toggler{
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 0.25rem;
+    margin-right: 20px;
   }
 
-  @media (max-width: 766px) and (min-width: 300px) {
+  .navbar-collapse{
+    margin-top: 20px;
+  }
 
-    p{
-      font-size: 16px;
-    }
-
-    .navbar-toggler{
-      padding: 0.25rem 0.75rem;
-      font-size: 1.25rem;
-      line-height: 1;
-      background-color: rgb(240, 240, 240);
-      border: 1px solid rgb(170, 170, 170);
-      border-radius: 0.25rem;
-    }
-  
-    .navbar-collapse{
-      margin-top: 20px;
-    }
-  
-    .navbar{
-      .logo-container{
-        img{
-          margin-left: -30px;
-        }
-      }
-      .nav-item{
-        a{
-          text-align: left;
-          font: 1.5rem Raleway !important;
-          margin: 5px 5px !important;
-        }
+  .navbar{
+    .logo-container{
+      img{
+        margin-left: -20px;
       }
     }
-
-    .v-header{
-      .header-content{
-        h1{
-          font-size: 50px !important;
-          margin-bottom: 0;
-          text-shadow: 5px 5px 5px black !important;
-        }
-      }
-  
-      .header-overlay{
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: $primary;
-        z-index: 1;
-        opacity: 0.9;
-      }
-    }
-  
-    #header{
-      .background-container{
-        h1{
-          font-size: 50px;
-        }
-      }
-    }
-
-    #board{
-        .member-container{
-            margin: 0px 0px 20px 0px;
-        }
-    }
-    
-    #footer{
-      .col{
-        padding-left: 30px;
-        padding-top: 20px;
+    .nav-item{
+      a{
+        text-align: left;
+        font: 1.5rem Raleway !important;
+        margin: 5px 5px !important;
       }
     }
   }
+  .v-header{
+    .header-content{
+      h1{
+        font-size: 50px !important;
+        margin-bottom: 0;
+        text-shadow: 5px 5px 5px black !important;
+      }
+    }
+
+    .header-overlay{
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $primary;
+      z-index: 1;
+      opacity: 0.9;
+    }
+  }
+
+  #header{
+    .background-container{
+      h1{
+        font-size: 50px;
+      }
+    }
+  }
+  #board{
+      .member-container{
+          margin: 0px 0px 20px 0px;
+      }
+  }
+  
+  #footer{
+    .col{
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+  }
+}
   
   @media (max-width: 990px) and  (min-width: 767px){
     .v-header{

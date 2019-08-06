@@ -10,7 +10,7 @@ $gray: #322B2B;
 }
 
 .navbar{
-    padding: 18px !important;
+    padding: 18px;
     background: white;
     transition: all 1s cubic-bezier(.61,.2,.43,.99);
     font-family: 'Raleway', sans-serif;
@@ -173,13 +173,11 @@ $gray: #322B2B;
       padding-bottom: 15px;
   }
 
-  p{
-    .lead{
-      font-size: 1.5rem;
-    }
-    
+  .lead{
+    font-size: 20px;
+    text-align: center;
   }
-
+    
   .white-border{
     border-bottom: 1px #ddd solid;
 
@@ -413,6 +411,7 @@ $gray: #322B2B;
     background-color: rgb(240, 240, 240);
     border: 1px solid rgb(170, 170, 170);
     border-radius: 0.25rem;
+    margin-right: 20px;
   }
 
   .navbar-collapse{
@@ -422,7 +421,7 @@ $gray: #322B2B;
   .navbar{
     .logo-container{
       img{
-        margin-left: -30px;
+        margin-left: -20px;
       }
     }
     .nav-item{
