@@ -1,0 +1,321 @@
+$primary: #26B3BF;
+$gray: #322B2B;
+
+*{
+  box-sizing: border-box;
+}
+
+.navbar{
+    border-radius: 1px;
+    background: white;
+    box-shadow: 2px 2px 10px $primary;
+
+    .nav-item{
+        padding-right: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    img{
+      width: 50px;
+      height: 50px;
+    }
+
+    img:hover{
+      transform: scale(2);
+      -webkit-transition: all .3s ease;
+    }
+
+    img:hover:after{
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+    }
+
+
+    a{
+      color: black;
+      text-decoration: none;
+      font: 1.4rem Raleway;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+    }
+
+    .topBotomBordersOut a:before, .topBotomBordersOut a:after
+    {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: $primary;
+        content: "";
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    .topBotomBordersOut a:before{
+        top: 0px;
+        transform: translateY(10px);
+    }
+
+    .topBotomBordersOut a:after{
+        bottom: 0px;
+        transform: translateY(-10px);
+    }
+
+    .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.v-header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  b{
+    color: $primary;
+    text-shadow: none;
+  }
+
+  .fullscreen-video-wrap{
+    border-bottom: 1px $primary solid;
+    box-shadow: 1px 1px 2px $primary;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    video{
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+    opacity: 0.5;
+  } 
+
+  .header-content{
+    z-index: 2;
+
+    h1{
+      text-transform: uppercase;
+      font-size: 100px;
+      margin-bottom: 0;
+      text-shadow: 5px 5px 5px $primary;
+    }
+
+    p{
+      font-size: 1.5rem;
+      display: block;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.container{
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+// #introduction{
+//   background: rgb(240, 234, 234);
+//   // border-bottom: 5px black solid;
+//   box-shadow: 1px 1px 15px black;
+
+//   strong{
+//     text-transform: uppercase;
+//     font-size: 1.7rem;
+//     font-weight: normal;
+//   }
+// }
+#statistics{
+  // background: red;
+  h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+    width: 100%;
+    margin: auto;
+  }
+
+  p{
+    .lead{
+      font-size: 1.5rem;
+    }
+    
+  }
+
+  .white-border{
+    border-bottom: 1px #ddd solid;
+  }
+  .box{
+    min-width: 220px;
+    height: 220px;
+    width: 220px!important;
+    margin: 0;
+    float: none;
+    text-align: left;
+    display: inline-block;
+    border: 4px solid $primary;
+    border-radius: 2px;
+    padding: 20px;
+    color: $gray;
+
+    h1{
+      font-weight: bolder;
+    }
+
+    p{
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+  
+}
+
+#testimonials{
+  margin: 0;
+  background: rgb(248, 246, 246);
+  box-shadow: 1px 1px 15px black;
+
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    width: 100%;
+    margin: auto;
+    
+  }
+
+  .white-border{
+    border-bottom: 1px #ddd solid;
+  }
+
+  figure{
+    background: white;
+    display: block;
+    margin: 1.5em;
+    padding: .7em;
+    box-shadow: 0px 2px 15px -6px rgba(26,26,26,1);
+    border-radius: 5px;
+
+    blockquote{
+      padding: .5em;
+      font-size: 1.3em;
+      font-style: italic;
+    }
+
+    figcaption{
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $gray;
+    }
+  }
+
+  .glider-contain{
+    width: 75% !important;
+  }
+
+  .glider-next{
+    right: -50px;
+    top: 50%;
+  }
+  .glider-prev{
+    right: -50px;
+    top: 50%;
+  }
+}
+
+#events{
+  position: relative;
+  border-radius: 1px;
+  box-shadow: 2px 1px 20px black;
+  text-align: center;
+  height: auto;
+  color: white;
+  background: url(../img/edmonton_bg.jpg);
+
+  .events-overlay{
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $primary;
+    z-index: 0;
+    opacity: 0.3;
+  }
+
+    .events-heading{
+      h1{
+        font-size: 4rem;
+        font-weight: lighter;
+        width: 50%;
+        margin: auto;
+        border-bottom: 1px #ddd solid;
+      }
+    }
+    
+
+    iframe{
+      background: $primary;
+      box-shadow: 2px 1px 10px black;
+      border-radius: 20px;
+    }
+}
+
+#contact{
+  background: $gray;
+
+  .display-4{
+    font-size: 3rem;
+    color: white;
+  }
+}
+
+#footer{
+  color: white;
+  background:black;
+}
+
+@media (min-width: 576px){
+  .v-header{
+    .header-content{
+      h1{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+

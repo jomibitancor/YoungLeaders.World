@@ -1,0 +1,77 @@
+$primary: #26B3BF;
+$gray: #322B2B;
+
+
+.navbar{
+        padding: 18px;
+        background: white;
+        transition: all 1s cubic-bezier(.61,.2,.43,.99);
+     
+        .nav-item{
+            padding-right: 2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    
+    
+        .logo-container{
+          width: 140px;
+          margin-top: -20px;
+          margin-bottom: -20px;
+          transition: all 1s cubic-bezier(.61,.2,.43,.99);
+    
+          img{
+            width: 100%;
+          }
+        }
+    
+        .nav-link{
+          transition: all 1s cubic-bezier(.61,.2,.43,.99);
+        }
+    
+        a{
+          color: gray;
+          text-decoration: none;
+          font: 1.4rem Raleway;
+          margin: 0px 10px;
+          padding: 10px 10px;
+          position: relative;
+          z-index: 0;
+          cursor: pointer;
+        }
+    
+        
+    
+        .topBotomBordersOut a:before, .topBotomBordersOut a:after
+        {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            background: $primary;
+            content: "";
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        .topBotomBordersOut a:before{
+            top: 0px;
+            transform: translateY(10px);
+        }
+    
+        .topBotomBordersOut a:after{
+            bottom: 0px;
+            transform: translateY(-10px);
+        }
+    
+        .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+}
+
+
+
+#footer{
+    color: white;
+    background:black;
+}

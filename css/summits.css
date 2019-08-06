@@ -1,0 +1,462 @@
+.navbar {
+  padding: 18px;
+  background: white;
+  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
+  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
+}
+
+.navbar .nav-item {
+  padding-right: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar .logo-container {
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
+  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
+}
+
+.navbar .logo-container img {
+  width: 100%;
+}
+
+.navbar .nav-link {
+  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
+  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
+}
+
+.navbar a {
+  color: gray;
+  text-decoration: none;
+  font: 1.4rem Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.navbar .topBotomBordersOut a:before, .navbar .topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #26b3bf;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.navbar .topBotomBordersOut a:before {
+  top: 0px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.navbar .topBotomBordersOut a:after {
+  bottom: 0px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.navbar .topBotomBordersOut a:hover:before, .navbar .topBotomBordersOut a:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+body {
+  background-color: #f5f2f2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23187091' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23317eb5' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%235cadc0' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%236fbcbe' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23679ec3' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23457894' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%236f98c8' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234394be' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2353649c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%233187c1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%238895cc' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23223768' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto Slab', sans-serif;
+  overflow-x: hidden;
+}
+
+body h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 5px black;
+  font-family: 'Raleway', sans-serif;
+}
+
+body h3 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 75px;
+  text-shadow: 5px 5px 5px white;
+  font-weight: 500;
+}
+
+#header .background-container {
+  background: #000 url(../img/mountains_bg.gif) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  color: white;
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+}
+
+#header .background-container .background-overlay {
+  background: black;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#introduction {
+  font-size: 1.5rem;
+  background: #F5F2F2;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+#summits {
+  position: relative;
+  text-align: center;
+}
+
+#summits .container {
+  padding: 80px 0px 80px 0px;
+}
+
+#summits .container .header-text {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  border-bottom: white solid 1px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+#summits strong {
+  text-transform: uppercase;
+  font-size: 75px;
+  text-shadow: 5px 5px 5px white;
+  font-weight: 500;
+}
+
+#summits .description {
+  position: relative;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+#summits .description h4 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+#summits .description a {
+  position: relative;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  color: gray;
+  -webkit-transition: color 2s cubic-bezier(0, 1.11, 0.49, 0.98);
+  transition: color 2s cubic-bezier(0, 1.11, 0.49, 0.98);
+  -webkit-transition: font-weight 0.5s cubic-bezier(0, 1.11, 0.49, 0.98);
+  transition: font-weight 0.5s cubic-bezier(0, 1.11, 0.49, 0.98);
+}
+
+#summits .description a::after {
+  border-top: 0.1em solid #26b3bf;
+  content: "";
+  position: absolute;
+  right: 49%;
+  top: 100%;
+  left: 49%;
+  -webkit-transition: all 2s cubic-bezier(0, 1.11, 0.49, 0.98);
+  transition: all 2s cubic-bezier(0, 1.11, 0.49, 0.98);
+}
+
+#summits .description a:hover {
+  text-decoration: none;
+  color: #26b3bf;
+  font-weight: 500;
+}
+
+#summits .description a:hover::after {
+  border-radius: 50%;
+  right: 10%;
+  left: 10%;
+}
+
+#summits .description .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F5F2F2;
+  border: #26b3bf solid 10px;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+#summits .description .col {
+  padding: 20px;
+}
+
+#summits iframe {
+  width: 100%;
+  height: 70vh;
+}
+
+#past-summits .summit-container {
+  padding: 80px 0px 80px 0px;
+}
+
+#past-summits .summit-container .header-text {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 10px;
+  border-bottom: white solid 1px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+#past-summits .summit-container .city-header-text {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  margin: 0 0 20px 0;
+}
+
+#past-summits .summit-container #edmonton1 {
+  background: url(../img/summits/edmonton1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#past-summits .summit-container #edmonton2 {
+  background: url(../img/summits/edmonton2.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#past-summits .summit-container #edmonton3 {
+  background: url(../img/summits/edmonton3.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#past-summits .summit-container #beijing1 {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  width: 100%;
+}
+
+#past-summits .summit-container #beijing1 #logo-container {
+  background: url(../img/summits/beijing1.jpg) no-repeat;
+  background-size: fill;
+  background-position: center;
+  height: 20vh;
+}
+
+#past-summits .summit-container #beijing1 .col p {
+  font-size: 1.8rem;
+  margin: 0;
+  color: black;
+}
+
+#past-summits .summit-container #beijing1 .col .text-muted {
+  margin: 0 0 20px 0;
+}
+
+#past-summits .summit-container #beijing2 {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#past-summits .summit-container #beijing2 #logo-container {
+  background: url(../img/summits/beijing2.png) no-repeat;
+  background-size: fill;
+  background-position: center;
+  height: 20vh;
+}
+
+#past-summits .summit-container #beijing2 .col p {
+  font-size: 1.8rem;
+  margin: 0;
+  color: black;
+}
+
+#past-summits .summit-container #beijing2 .col .text-muted {
+  margin: 0 0 20px 0;
+}
+
+#past-summits .summit-container #qingdao1 {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+#past-summits .summit-container #qingdao1 #logo-container {
+  background: url(../img/summits/qingdao1.png) no-repeat;
+  background-size: fill;
+  background-position: center;
+  height: 50vh;
+}
+
+#past-summits .summit-container #qingdao1 .col p {
+  font-size: 1.8rem;
+  margin: 0;
+  color: black;
+}
+
+#past-summits .summit-container #qingdao1 .col .text-muted {
+  margin: 0 0 20px 0;
+}
+
+#past-summits .summit-container #shanghai1 {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+#past-summits .summit-container #shanghai1 #logo-container {
+  background: url(../img/summits/shanghai1.png) no-repeat;
+  background-size: fill;
+  background-position: center;
+  height: 40vh;
+}
+
+#past-summits .summit-container #shanghai1 .col p {
+  font-size: 1.8rem;
+  margin: 0;
+  color: black;
+}
+
+#past-summits .summit-container #shanghai1 .col .text-muted {
+  margin: 0 0 20px 0;
+}
+
+#past-summits .summit-container .singular-event-container {
+  margin: 20px auto 20px auto;
+  height: 75vh;
+  position: relative;
+}
+
+#past-summits .summit-container .singular-event-container .details {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 0 20px 20px;
+}
+
+#past-summits .summit-container .singular-event-container .details p {
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #f0f0f0;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.25rem;
+  }
+  .navbar-collapse {
+    margin-top: 20px;
+  }
+  .navbar .logo-container img {
+    margin-left: -30px;
+  }
+  .navbar .nav-item a {
+    text-align: left;
+    font: 1.5rem Raleway !important;
+    margin: 5px 5px !important;
+  }
+  body p {
+    font-size: 16px;
+  }
+  body h1 {
+    font-size: 50px;
+  }
+  body h3 {
+    font-size: 40px;
+  }
+  body h4 {
+    font-size: 16px !important;
+  }
+  .edmonton-expo {
+    visibility: hidden;
+  }
+  #summits .summit-container .container .row {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #summits .summit-container .container .row .col iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  #past-summits .row {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #past-summits .summit-container .city-header-text {
+    font-size: 30px;
+  }
+  #past-summits .summit-container #beijing1 .col p {
+    font-size: 1.5rem;
+  }
+  #past-summits .summit-container #beijing2 .col p {
+    font-size: 1.5rem;
+  }
+  #past-summits .summit-container #qingdao1 .col p {
+    font-size: 1.5rem;
+  }
+  #past-summits .summit-container #shanghai1 .col p {
+    font-size: 1.5rem;
+  }
+  #footer .col {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 990px) and (min-width: 767px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #f0f0f0;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.25rem;
+  }
+  .navbar .nav-item {
+    padding-right: 2px;
+  }
+  .navbar .nav-item a {
+    font: 1rem Raleway !important;
+  }
+}
+/*# sourceMappingURL=summits.css.map */
