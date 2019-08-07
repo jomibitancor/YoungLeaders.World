@@ -137,8 +137,8 @@ strong{
 #history{
     position: relative;
     background: url(../img/edmonton_bg.jpg) no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: -1200px -1000px;
     color: white;
     .overlay{
       position: absolute;

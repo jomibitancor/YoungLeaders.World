@@ -95,7 +95,7 @@ body h3 {
 }
 
 #header .background-container {
-  background: #000 url(../img/mountains_bg.gif) no-repeat;
+  background: #000 url(../img/mountains_bg.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -248,13 +248,13 @@ body h3 {
 }
 
 #past-summits .summit-container #edmonton2 {
-  background: url(../img/summits/edmonton2.gif) no-repeat;
+  background: url(../img/summits/edmonton2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .summit-container #edmonton3 {
-  background: url(../img/summits/edmonton3.gif) no-repeat;
+  background: url(../img/summits/edmonton3.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
