@@ -331,6 +331,42 @@ $gray: #322B2B;
     opacity: 0.1;
   }
 
+  #iskl{
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px black;
+  }
+
+  #speakers-attending{
+    a{
+      position: relative;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s ease-in;
+    }
+    a:before{
+      position: absolute;
+        top: 100%;
+        left: 0;
+      content: "";
+      border-bottom: 1px dashed $primary;
+      width: 100%;
+      transition: all 1s cubic-bezier(.25,.1,.25,1);
+    }
+    a:hover{
+      color: $primary;
+    }
+    a:hover:before{
+      position: absolute;
+        top: 100%;
+        left: 0%;
+      content: "";
+      border-bottom: 1px dashed white;
+      width: 0%;
+    }
+
+  }   
+
     .events-heading{
       h1{
         font-size: 45px;
@@ -494,6 +530,16 @@ $gray: #322B2B;
       }
     }
 
+    #speakers-attending{
+      a{
+        font-size: 20px;
+      }
+    }
+
+    h1{
+      font-size: 25px;
+    }
+
     .event-description{
       font-size: 20px;
     }
@@ -589,6 +635,14 @@ $gray: #322B2B;
       display: block;
       margin-top: 10px;
     }  
+  }
+
+  #events{
+    #speakers-attending{
+      a{
+        font-size: 20px;
+      }
+    }
   }
 
   .glider-contain{

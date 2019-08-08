@@ -338,6 +338,45 @@
   opacity: 0.1;
 }
 
+#events #iskl {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 1px 10px black;
+          box-shadow: 2px 1px 10px black;
+}
+
+#events #speakers-attending a {
+  position: relative;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#events #speakers-attending a:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  border-bottom: 1px dashed #26B3BF;
+  width: 100%;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#events #speakers-attending a:hover {
+  color: #26B3BF;
+}
+
+#events #speakers-attending a:hover:before {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  content: "";
+  border-bottom: 1px dashed white;
+  width: 0%;
+}
+
 #events .events-heading h1 {
   font-size: 45px;
   font-weight: lighter;
@@ -464,6 +503,12 @@
     margin: auto;
     border-bottom: 1px #ddd solid;
   }
+  #events #speakers-attending a {
+    font-size: 20px;
+  }
+  #events h1 {
+    font-size: 25px;
+  }
   #events .event-description {
     font-size: 20px;
   }
@@ -535,6 +580,9 @@
     margin-right: auto;
     display: block;
     margin-top: 10px;
+  }
+  #events #speakers-attending a {
+    font-size: 20px;
   }
   .glider-contain {
     width: 75% !important;
