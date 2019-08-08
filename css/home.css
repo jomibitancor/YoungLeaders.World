@@ -345,36 +345,48 @@
 }
 
 #events #speakers-attending a {
-  position: relative;
-  font-size: 40px;
+  color: whitesmoke;
   text-decoration: none;
-  color: white;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-#events #speakers-attending a:before {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  content: "";
-  border-bottom: 1px dashed #26B3BF;
-  width: 100%;
-  -webkit-transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
-  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  font: 30px Roboto Slab;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
 
 #events #speakers-attending a:hover {
   color: #26B3BF;
 }
 
-#events #speakers-attending a:hover:before {
+#events #speakers-attending .topBotomBordersOut a:before, #events #speakers-attending .topBotomBordersOut a:after {
   position: absolute;
-  top: 100%;
-  left: 0%;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #26B3BF;
   content: "";
-  border-bottom: 1px dashed white;
-  width: 0%;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#events #speakers-attending .topBotomBordersOut a:before {
+  top: 0px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#events #speakers-attending .topBotomBordersOut a:after {
+  bottom: 0px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#events #speakers-attending .topBotomBordersOut a:hover:before, #events #speakers-attending .topBotomBordersOut a:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 #events .events-heading h1 {

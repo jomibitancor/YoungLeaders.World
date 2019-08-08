@@ -338,31 +338,43 @@ $gray: #322B2B;
 
   #speakers-attending{
     a{
-      position: relative;
-      font-size: 40px;
+      color: whitesmoke;
       text-decoration: none;
-      color: white;
-      transition: all 0.2s ease-in;
-    }
-    a:before{
-      position: absolute;
-        top: 100%;
-        left: 0;
-      content: "";
-      border-bottom: 1px dashed $primary;
-      width: 100%;
-      transition: all 1s cubic-bezier(.25,.1,.25,1);
+      font: 30px Roboto Slab;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
     }
     a:hover{
       color: $primary;
     }
-    a:hover:before{
-      position: absolute;
-        top: 100%;
-        left: 0%;
-      content: "";
-      border-bottom: 1px dashed white;
-      width: 0%;
+   
+    .topBotomBordersOut a:before, .topBotomBordersOut a:after
+    {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: $primary;
+        content: "";
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    .topBotomBordersOut a:before{
+        top: 0px;
+        transform: translateY(10px);
+    }
+
+    .topBotomBordersOut a:after{
+        bottom: 0px;
+        transform: translateY(-10px);
+    }
+
+    .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
+        opacity: 1;
+        transform: translateY(0px);
     }
   }   
 
