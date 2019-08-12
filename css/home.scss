@@ -426,6 +426,12 @@ $gray: #322B2B;
       }
     }
   }
+
+    .instagram-container{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 #contact{
@@ -559,6 +565,12 @@ $gray: #322B2B;
       width: auto;
     }
   }
+  #social_media{
+    .instagram-container{
+      width: 100%;
+    }
+  }
+
   #footer{
     .col{
       padding-left: 30px;

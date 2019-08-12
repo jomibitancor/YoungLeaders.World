@@ -435,6 +435,12 @@
   color: #26B3BF;
 }
 
+#social_media .instagram-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #contact {
   overflow-x: hidden;
   background: #322B2B;
@@ -526,6 +532,9 @@
   }
   #events iframe {
     width: auto;
+  }
+  #social_media .instagram-container {
+    width: 100%;
   }
   #footer .col {
     padding-left: 30px;
