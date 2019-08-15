@@ -257,9 +257,9 @@ body{
         }
 
         #beijing1{
+            width: 70%;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
-            width: 100%;
 
             #logo-container{
                 background: url(../img/summits/beijing1.jpg) no-repeat;
@@ -280,10 +280,10 @@ body{
             }
         }
         #beijing2{
+            width: 70%;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             margin-top: 50px;
-            width: 100%;
 
             #logo-container{
                 background: url(../img/summits/beijing2.png) no-repeat;
@@ -305,6 +305,7 @@ body{
         }
 
         #qingdao1{
+            width: 50%;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             #logo-container{
@@ -326,6 +327,7 @@ body{
         }
 
         #shanghai1{
+            width: 50%;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             #logo-container{
@@ -347,10 +349,35 @@ body{
             }
         }
 
+        #suzhou1{
+            width: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            #logo-container{
+                background: url(../img/summits/suzhou-international-school.png) no-repeat;
+                background-size: fill;
+                background-position: center;
+                height: 30vh;
+                
+            }
+            .col{
+                p{
+                    font-size: 1.8rem;
+                    margin: 0;
+                    color: black;
+                    
+                }
+                .text-muted{
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+
         .singular-event-container{        
             margin: 20px auto 20px auto;    
             height: 75vh;
             position: relative;
+            width: 60%;
 
             .details{
                 position: absolute;

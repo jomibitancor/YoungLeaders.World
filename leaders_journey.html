@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://kit.fontawesome.com/f1ab9365d8.js"></script>
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/leaders_journey.css" />
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- GOOGLE FONT (Raleway & Roboto Slab) -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/f1ab9365d8.js"></script>
+
+  <!-- WOW & ANIMATE -->
   <link rel="stylesheet" href="css/animate.css" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/glider.min.css" />
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <script type="text/javascript" src="js/swiper.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+  <script>new WOW().init();</script>
 
 
-    <title>Leader's Journey</title>
-
-    <link rel="icon" href="img/ylwLogo.png" />
+  <title>Leader's Journey</title>
+  <link rel="icon" href="img/ylwLogo.png" />
 </head>
+
 <body>
-    <!-- NAVBAR -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
       <div class="logo-container">
-        <a href="index.php"><img src="img/ylwLogo.png" alt="logo" /></a>
+        <a href="index.html"><img src="img/ylwLogo.png" alt="logo" /></a>
       </div>
 
 
@@ -36,16 +45,19 @@
       <div id="navbar1" class="collapse navbar-collapse container topBotomBordersOut">
         <ul class="nav navbar-nav mx-auto">
           <li class="nav-item">
-            <a href="about.php" class="nav-link">About Us</a>
+            <a href="about.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="speakers.php" class="nav-link">Speakers</a>
+            <a href="speakers.html" class="nav-link">Speakers</a>
           </li>
           <li class="nav-item">
-            <a href="summits.php" class="nav-link">Summits</a>
+            <a href="summits.html" class="nav-link">Summits</a>
           </li>
           <li class="nav-item">
-            <a href="contact.php" class="nav-link">Contact</a>
+            <a href="video_resources.html" class="nav-link">Video Resources</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -53,8 +65,67 @@
   </nav>
   <!-- NAVBAR END -->
 
-<!-- FOOTER -->
-<section id="footer" class="pt-2">
+  <!-- HEADER -->
+  <section id="header">
+    <div class="background-container d-flex justify-content-center align-items-center">
+      <h1 class="animated fadeInUp">Leader's Journey</h1>
+      <div class="background-overlay"></div>
+    </div>
+  </section>
+  <!-- HEADER (END) -->
+
+  <!-- INTRODUCTION -->
+  <section id="introduction">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col">
+          <p>At YoungLeaders.World we work with young people ages 14-20 to help them understand how to lead their lives.
+            Our team has developed the 5 step leaders journey. This helps indiviudals, teams, organizations and schools
+            make changes to help them reach their leadership goals. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- INTRODUCTION -->
+
+  <section id="leaders_journey">
+    <div class="pillar-container">
+      <h2 class="wow fadeIn">The 5 pillars of the Leader's Journey include</h1>
+    </div>
+
+    <div class="pillar-container">
+      <h1 id="vision" class="wow fadeIn">Vision</h1>
+      <h2 class="wow fadeIn" data-wow-delay="1s">Where are you going?</h2>
+    </div>
+
+    <div class="pillar-container">
+      <h1 class="wow fadeIn">Values</h1>
+      <h2 class="wow fadeIn" data-wow-delay="1s">What lines won't you cross?</h2>
+
+    </div>
+
+    <div class="pillar-container">
+      <h1 class="wow fadeIn">Mission</h1>
+      <h2 class="wow fadeIn" data-wow-delay="1s">What will keep you going?</h2>
+    </div>
+
+    <div class="pillar-container">
+      <h1 id="strengths" class="wow fadeIn">Strengths</h1>
+      <h2 class="wow fadeIn" data-wow-delay="1s">What will you bring with you?</h2>
+    </div>
+
+    <div class="pillar-container">
+      <h1 id="barriers" class="wow fadeIn">Barriers</h1>
+      <h2 class="wow fadeIn" data-wow-delay="1s">What will you leave behind?</h2>
+    </div>
+
+    <div class="pillar-container">
+      <p>A full course to work through the Leader's Journey is coming in the Spring of 2020. </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section id="footer" class="pt-2">
     <div class="container">
       <div class="row align-items-center">
         <div class="col">
@@ -96,8 +167,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-   
-    <!-- SCROLLING_NAVBAR -->
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- SCROLLING_NAVBAR -->
   <script type="text/javascript" src="js/scrolling_navbar.js"></script>
 </body>
+
 </html>

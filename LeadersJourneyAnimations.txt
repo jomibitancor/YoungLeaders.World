@@ -1,0 +1,5 @@
+Vision -> Rectangle at the end of the 'leadership' line
+Mission -> Arrows that animates towards the vision
+Values -> Fenceposts that bounces you back to your path when you try to swiggle around the path
+Strengths -> 
+Varriers -> Lines that can we can hurdle around

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>YoungLeaders.World</title>
+
     <link rel="stylesheet" href="css/home.css" />
     <script src="https://kit.fontawesome.com/f1ab9365d8.js"></script>
     <link rel="stylesheet" href="css/animate.css" />
@@ -16,12 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script>new WOW().init();</script>
 
+    <title>YoungLeaders.World</title>
     <link rel="icon" href="img/ylwLogo.png" />
-
 </head>
 
 <body>
@@ -50,6 +48,9 @@
                         <a href="summits.html" class="nav-link">Summits</a>
                     </li>
                     <li class="nav-item">
+                        <a href="video_resources.html" class="nav-link">Video Resources</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
@@ -72,7 +73,7 @@
         <div class="container header-content">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="wow fadeInUp">
+                    <h1 class="animated fadeInUp">
                         For Growth <br> & Good
                     </h1>
                 </div>
@@ -171,12 +172,11 @@
 
                 <div class="d-flex justify-content-center">
                     <div class="button-container">
-                        <button class="btn btn-primary disabled" data-toggle="tooltip" data-placement="bottom"
-                            title="Coming Soon!">
-                            <!-- <a href="leaders_journey.html"> -->
-                            <div>BEGIN YOUR</div>
-                            <div><strong> Leader's Journey</strong></div>
-                            <!-- </a> -->
+                        <button class="btn btn-primary">
+                            <a href="leaders_journey.html">
+                                <div>BEGIN YOUR</div>
+                                <div><strong> Leader's Journey</strong></div>
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -362,6 +362,7 @@
                 </div>
             </div>
 
+            <!-- EVENT START -->
             <div class="row pt-5">
                 <div class="col">
                     <h1>
@@ -395,7 +396,14 @@
                     </div>
                 </div>
             </div>
+            <!-- EVENT END -->
 
+            <div class="container">
+                <div class="white-border"></div>
+            </div>
+
+
+            <!-- EVENT START -->
             <div class="row pt-5">
                 <div class="col">
                     <h1>
@@ -425,7 +433,13 @@
                     </div>
                 </div>
             </div>
+            <!-- EVENT END -->
 
+            <div class="container">
+                <div class="white-border"></div>
+            </div>
+
+            <!-- EVENT START -->
             <div class="row pt-5">
                 <div class="col">
                     <h1>
@@ -439,16 +453,17 @@
                     <iframe src="https://www.youtube.com/embed/kfGYMiwofbg" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
+
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-primary btn text-white disabled mb-5">
+                            <i class="fas fa-ticket-alt pr-3"></i>
+                            Registration Opens October 2019
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="row pt-3">
-                <div class="col">
-                    <a href="#" class="btn btn-outline-primary btn text-white disabled mb-5">
-                        <i class="fas fa-ticket-alt pr-3"></i>
-                        Registration Opens October 2019
-                    </a>
-                </div>
-            </div>
+            <!-- EVENT END -->
+
         </div>
     </div>
     <!-- UPCOMING EVENTS (END) -->
@@ -573,10 +588,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- SENDING EMAIL main.js -->
-    <script src="js/main.js"></script>
-    <!-- SENDING EMAIL main.js -->
 
     <!-- INITIALIZE TOOLTIP -->
     <script>
