@@ -21,7 +21,7 @@ body{
     font-weight: lighter;
     width: 75%;
     margin: auto;
-    border-bottom: 1px black solid;
+    // border-bottom: 1px black solid;
     text-align: center;
   }
   #by{
@@ -135,11 +135,10 @@ body{
 }
 
 #introduction{
-  
+  padding-top: 40px;
+  padding-bottom: 40px;
   background: #F5F2F2;
-  p{
-    padding-top: 20px;
-  }
+  
 }
 
 #video_resources{
