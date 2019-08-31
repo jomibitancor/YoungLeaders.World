@@ -337,10 +337,24 @@ $gray: #322B2B;
     opacity: 0.1;
   }
 
+  .muted{
+    font-style: italic;
+  }
+
   #iskl{
     border-radius: 20px;
     box-shadow: 2px 1px 10px black;
   }
+
+  #iskl-div{
+      margin-top: -15px;
+    #iskl-link{
+      text-decoration: none;
+      font-style: italic; 
+      color: #ddd;
+    }
+  }
+  
 
   #speakers-attending{
     a{
@@ -410,7 +424,7 @@ $gray: #322B2B;
     }
 }
 
-#social_media{
+#social{
   overflow-x: hidden;
   padding-bottom: 30px;
   h1{

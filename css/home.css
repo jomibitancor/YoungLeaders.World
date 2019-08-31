@@ -345,10 +345,24 @@
   opacity: 0.1;
 }
 
+#events .muted {
+  font-style: italic;
+}
+
 #events #iskl {
   border-radius: 20px;
   -webkit-box-shadow: 2px 1px 10px black;
           box-shadow: 2px 1px 10px black;
+}
+
+#events #iskl-div {
+  margin-top: -15px;
+}
+
+#events #iskl-div #iskl-link {
+  text-decoration: none;
+  font-style: italic;
+  color: #ddd;
 }
 
 #events #speakers-attending a {
@@ -420,12 +434,12 @@
   height: 50vh;
 }
 
-#social_media {
+#social {
   overflow-x: hidden;
   padding-bottom: 30px;
 }
 
-#social_media h1 {
+#social h1 {
   font-size: 45px;
   font-weight: lighter;
   width: 75%;
@@ -434,15 +448,15 @@
   border-bottom: 1px black solid;
 }
 
-#social_media .container .d-flex div {
+#social .container .d-flex div {
   padding: 20px;
 }
 
-#social_media .container .d-flex div a {
+#social .container .d-flex div a {
   color: #26B3BF;
 }
 
-#social_media .instagram-container {
+#social .instagram-container {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
