@@ -147,11 +147,16 @@ body{
         padding-bottom: 30px;
     }
 
+    .padding_between{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
     .gray_box{
         background: rgba(0, 0, 0, 0.5);
 
         .left_box{
-            background: red;
+            background: rgba(0, 0, 0, 1);
             margin-left: -15px;
             height: 200px;
             width: 200px;

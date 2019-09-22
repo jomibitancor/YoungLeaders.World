@@ -129,12 +129,17 @@ body p {
   padding-bottom: 30px;
 }
 
+#ways_to_give .padding_between {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #ways_to_give .gray_box {
   background: rgba(0, 0, 0, 0.5);
 }
 
 #ways_to_give .gray_box .left_box {
-  background: red;
+  background: black;
   margin-left: -15px;
   height: 200px;
   width: 200px;
