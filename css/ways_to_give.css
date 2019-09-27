@@ -20,6 +20,36 @@ body p {
   font-size: 1.5rem;
 }
 
+body .topBotomBordersOut a:before, body .topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #26B3BF;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body .topBotomBordersOut a:before {
+  top: 0px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+body .topBotomBordersOut a:after {
+  bottom: 0px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+body .topBotomBordersOut a:hover:before, body .topBotomBordersOut a:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .navbar {
   padding: 18px;
   background: white;
@@ -61,36 +91,6 @@ body p {
   cursor: pointer;
 }
 
-.navbar .topBotomBordersOut a:before, .navbar .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #26B3BF;
-  content: "";
-  opacity: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.navbar .topBotomBordersOut a:before {
-  top: 0px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-.navbar .topBotomBordersOut a:after {
-  bottom: 0px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.navbar .topBotomBordersOut a:hover:before, .navbar .topBotomBordersOut a:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
 #header .background-container {
   background: #000 url(../img/wtg_bg.jpg) no-repeat;
   background-size: cover;
@@ -129,12 +129,17 @@ body p {
   padding-bottom: 30px;
 }
 
+#ways_to_give .padding_between {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #ways_to_give .gray_box {
   background: rgba(0, 0, 0, 0.5);
 }
 
 #ways_to_give .gray_box .left_box {
-  background: red;
+  background: rgba(0, 0, 0, 0.5);
   margin-left: -15px;
   height: 200px;
   width: 200px;
@@ -145,9 +150,18 @@ body p {
   padding-left: 1.5rem;
 }
 
+#ways_to_give .gray_box .lead {
+  font-size: 25px;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
 #ways_to_give .gray_box p {
   color: white;
-  margin-bottom: 0px;
+}
+
+#ways_to_give .gray_box p span {
+  padding-right: 10px;
 }
 
 #ways_to_give .gray_box h1 {
@@ -157,6 +171,14 @@ body p {
 
 #ways_to_give .gray_box ul {
   list-style-type: none;
+}
+
+#ways_to_give button a {
+  color: white;
+}
+
+#ways_to_give button a:hover {
+  color: #26B3BF;
 }
 
 #footer {
