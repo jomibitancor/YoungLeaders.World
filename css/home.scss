@@ -428,13 +428,16 @@ $gray: #322B2B;
 #social{
   overflow-x: hidden;
   padding-bottom: 30px;
+  background: url(../img/edmonton_bg.gif);
+  background-size: cover;
   h1{
     font-size: 45px;
     font-weight: lighter;
     width: 75%;
     margin: auto;
     padding-bottom: 5px;
-    border-bottom: 1px black solid;
+    color: white;
+    border-bottom: 1px white solid;
   }
 
   .container{
@@ -442,7 +445,7 @@ $gray: #322B2B;
       div{
         padding: 20px;
         a{
-          color: $primary;
+          color: white;
         }
       }
     }

@@ -100,6 +100,24 @@ body h4 {
   text-shadow: 3px 3px 3px black;
 }
 
+body .city-header-text {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  margin: 0 0 20px 0;
+}
+
+body .header-text {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  border-bottom: white solid 1px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
 body .padding {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -139,127 +157,6 @@ body iframe {
           box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
 }
 
-#events {
-  overflow-x: hidden;
-  position: relative;
-  border-radius: 1px;
-  -webkit-box-shadow: 2px 1px 20px black;
-          box-shadow: 2px 1px 20px black;
-  text-align: center;
-  height: auto;
-  color: white;
-  background: url(../img/edmonton_bg.gif);
-  background-size: cover;
-}
-
-#events .white-border {
-  border-bottom: 1px #ddd solid;
-  width: 100%;
-  height: 10vh;
-}
-
-#events .event-description {
-  font-size: 30px;
-}
-
-#events .events-overlay {
-  height: 100%;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #26b3bf;
-  z-index: 0;
-  opacity: 0.1;
-}
-
-#events .muted {
-  font-style: italic;
-}
-
-#events #iskl {
-  border-radius: 20px;
-  -webkit-box-shadow: 2px 1px 10px black;
-          box-shadow: 2px 1px 10px black;
-}
-
-#events #iskl-div {
-  margin-top: -15px;
-}
-
-#events #iskl-div #iskl-link {
-  text-decoration: none;
-  font-style: italic;
-  color: #ddd;
-  text-shadow: none;
-  font-size: 40px;
-}
-
-#events #speakers-attending a {
-  color: whitesmoke;
-  text-decoration: none;
-  font: 30px Roboto Slab;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-#events #speakers-attending a:hover {
-  color: #26b3bf;
-}
-
-#events #speakers-attending .topBotomBordersOut a:before, #events #speakers-attending .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #26b3bf;
-  content: "";
-  opacity: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-#events #speakers-attending .topBotomBordersOut a:before {
-  top: 0px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-#events #speakers-attending .topBotomBordersOut a:after {
-  bottom: 0px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-#events #speakers-attending .topBotomBordersOut a:hover:before, #events #speakers-attending .topBotomBordersOut a:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-#events .events-heading h1 {
-  font-size: 45px;
-  font-weight: lighter;
-  width: 75%;
-  margin: auto;
-  padding-bottom: 5px;
-  border-bottom: 1px white solid;
-  text-shadow: 0px 0px white;
-}
-
-#events h1 {
-  font-size: 50px;
-  text-shadow: 5px 5px 5px black;
-}
-
-#events ul {
-  text-align: left;
-  list-style-type: circle;
-}
-
 #summits {
   position: relative;
   text-align: center;
@@ -267,16 +164,6 @@ body iframe {
 
 #summits .container {
   padding: 80px 0px 80px 0px;
-}
-
-#summits .container .header-text {
-  text-align: center;
-  font-size: 3rem;
-  padding-bottom: 20px;
-  border-bottom: white solid 1px;
-  margin-bottom: 50px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
 }
 
 #summits strong {
@@ -348,183 +235,145 @@ body iframe {
 }
 
 #summits .description .col {
-  padding: 20px;
+  padding: 100px 0px 100px 0px;
 }
 
-#past-summits .summit-container {
+#summits .img-fluid {
+  max-width: 50%;
+}
+
+#summits #speakers-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#summits #speakers-container .img-container {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#summits #speakers-container .speaker-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  padding-top: 300px;
+  font-family: 'Raleway';
+  font-size: 2rem;
+}
+
+#summits #speakers-container #carla {
+  background: url(../img/speakers/vision2020/carla.gif);
+  background-size: cover;
+}
+
+#summits #speakers-container #josh {
+  background: url(../img/speakers/vision2020/josh.gif);
+  background-size: cover;
+}
+
+#summits #speakers-container #tyler {
+  background: url(../img/speakers/vision2020/tyler.gif);
+  background-size: cover;
+}
+
+#summits #speakers-container #paul {
+  background: url(../img/speakers/vision2020/paul.gif);
+  background-size: cover;
+}
+
+#summits #speakers-container #lauren {
+  background: url(../img/speakers/vision2020/lauren.gif);
+  background-size: cover;
+}
+
+#past-events .events-container {
   padding: 80px 0px 80px 0px;
 }
 
-#past-summits .summit-container .header-text {
-  text-align: center;
-  font-size: 3rem;
-  padding-bottom: 10px;
-  border-bottom: white solid 1px;
-  margin-bottom: 50px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
+#past-events img {
+  border-radius: 10px;
+  -webkit-box-shadow: white 0px 0px 10px;
+          box-shadow: white 0px 0px 10px;
 }
 
-#past-summits .summit-container .city-header-text {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  margin: 0 0 20px 0;
+#past-summits .past-conferences-container {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#past-summits .summit-container #edmonton1 {
-  background: url(../img/summits/edmonton1.jpg) no-repeat;
+#past-summits .past-conferences-container .single-conference-container {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  border: white solid 2px;
+  -webkit-box-shadow: #F5F2F2 0px 0px 10px;
+          box-shadow: #F5F2F2 0px 0px 10px;
+  border-radius: 10px;
+}
+
+#past-summits .past-conferences-container .single-conference-container .conference-text {
+  padding-top: 300px;
+  color: white;
+}
+
+#past-summits .past-conferences-container .single-conference-container .conference-text p {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+#past-summits .past-conferences-container #intensive-conference-1 {
+  background: url(../img/summits/edmonton1.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#past-summits .summit-container #edmonton2 {
-  background: url(../img/summits/edmonton2.jpg) no-repeat;
+#past-summits .past-conferences-container #intensive-conference-2 {
+  background: url(../img/summits/edmonton2.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#past-summits .summit-container #edmonton3 {
-  background: url(../img/summits/edmonton3.jpg) no-repeat;
+#past-summits .past-conferences-container #intensive-conference-3 {
+  background: url(../img/summits/edmonton3.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#past-summits .summit-container #beijing1 {
-  width: 70%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-}
-
-#past-summits .summit-container #beijing1 #logo-container {
-  background: url(../img/summits/beijing1.jpg) no-repeat;
-  background-size: fill;
+#past-summits .past-conferences-container #china-1 {
+  background: url(../img/summits/schools/hope_international_school.gif);
+  background-size: cover;
   background-position: center;
-  height: 20vh;
 }
 
-#past-summits .summit-container #beijing1 .col p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: black;
-}
-
-#past-summits .summit-container #beijing1 .col .text-muted {
-  margin: 0 0 20px 0;
-}
-
-#past-summits .summit-container #beijing2 {
-  width: 70%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  margin-top: 50px;
-}
-
-#past-summits .summit-container #beijing2 #logo-container {
-  background: url(../img/summits/beijing2.png) no-repeat;
-  background-size: fill;
+#past-summits .past-conferences-container #china-2 {
+  background: url(../img/summits/schools/beijing_city_international_school.gif);
+  background-size: cover;
   background-position: center;
-  height: 20vh;
 }
 
-#past-summits .summit-container #beijing2 .col p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: black;
-}
-
-#past-summits .summit-container #beijing2 .col .text-muted {
-  margin: 0 0 20px 0;
-}
-
-#past-summits .summit-container #qingdao1 {
-  width: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-}
-
-#past-summits .summit-container #qingdao1 #logo-container {
-  background: url(../img/summits/qingdao1.png) no-repeat;
-  background-size: fill;
+#past-summits .past-conferences-container #china-3 {
+  background: url(../img/summits/schools/qingdao_amerasia_international_school.gif);
+  background-size: cover;
   background-position: center;
-  height: 50vh;
 }
 
-#past-summits .summit-container #qingdao1 .col p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: black;
-}
-
-#past-summits .summit-container #qingdao1 .col .text-muted {
-  margin: 0 0 20px 0;
-}
-
-#past-summits .summit-container #shanghai1 {
-  width: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-}
-
-#past-summits .summit-container #shanghai1 #logo-container {
-  background: url(../img/summits/shanghai1.png) no-repeat;
-  background-size: fill;
+#past-summits .past-conferences-container #china-4 {
+  background: url(../img/summits/schools/concordia_international_school.gif);
+  background-size: cover;
   background-position: center;
-  height: 40vh;
 }
 
-#past-summits .summit-container #shanghai1 .col p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: black;
-}
-
-#past-summits .summit-container #shanghai1 .col .text-muted {
-  margin: 0 0 20px 0;
-}
-
-#past-summits .summit-container #suzhou1 {
-  width: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-}
-
-#past-summits .summit-container #suzhou1 #logo-container {
-  background: url(../img/summits/suzhou-international-school.png) no-repeat;
-  background-size: fill;
+#past-summits .past-conferences-container #china-5 {
+  background: url(../img/summits/schools/suzhou_international_school.gif);
+  background-size: cover;
   background-position: center;
-  height: 30vh;
-}
-
-#past-summits .summit-container #suzhou1 .col p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: black;
-}
-
-#past-summits .summit-container #suzhou1 .col .text-muted {
-  margin: 0 0 20px 0;
-}
-
-#past-summits .summit-container .singular-event-container {
-  margin: 20px auto 20px auto;
-  height: 50vh;
-  position: relative;
-  width: 50%;
-}
-
-#past-summits .summit-container .singular-event-container .details {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0 0 20px 20px;
-}
-
-#past-summits .summit-container .singular-event-container .details p {
-  font-size: 1.8rem;
-  margin: 0;
-  color: white;
 }
 
 #footer {
@@ -561,13 +410,16 @@ body iframe {
     font-size: 50px;
   }
   body h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
   body h4 {
     font-size: 16px !important;
   }
   .edmonton-expo {
     visibility: hidden;
+  }
+  #summits .img-fluid {
+    max-width: 75%;
   }
   #summits .summit-container .container .row {
     margin-right: 10px;

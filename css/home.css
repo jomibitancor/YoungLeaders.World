@@ -438,6 +438,8 @@
 #social {
   overflow-x: hidden;
   padding-bottom: 30px;
+  background: url(../img/edmonton_bg.gif);
+  background-size: cover;
 }
 
 #social h1 {
@@ -446,7 +448,8 @@
   width: 75%;
   margin: auto;
   padding-bottom: 5px;
-  border-bottom: 1px black solid;
+  color: white;
+  border-bottom: 1px white solid;
 }
 
 #social .container .d-flex div {
@@ -454,7 +457,7 @@
 }
 
 #social .container .d-flex div a {
-  color: #26B3BF;
+  color: white;
 }
 
 #social .instagram-container {
