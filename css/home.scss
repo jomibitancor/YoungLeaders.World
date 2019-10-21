@@ -234,10 +234,10 @@ $gray: #322B2B;
     z-index: 1;
 
     .btn{
-      transition: transform 1s cubic-bezier(.45,.62,.12,1.91);
-      
+      // transition: all .5s cubic-bezier(.45,.62,.12,1.91);
+      transition: all 0.1s ease-in;
       background: $primary;
-      border-radius: 25px;
+      border-radius: 20px;
 
       strong{
         text-transform: uppercase;
@@ -245,7 +245,11 @@ $gray: #322B2B;
     }
 
     .btn:hover{      
-      transform: scale(1.2);
+      // background: transparent;
+      border-color: white;
+      border-radius: 30px;
+      // font-size: 14px;
+      transform: scale(1.05);
     }
   }
 

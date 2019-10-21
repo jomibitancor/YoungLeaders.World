@@ -125,11 +125,11 @@ body .padding {
 
 body iframe {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
 }
 
 #header .background-container {
-  background: #000 url(../img/mountains_bg.jpg) no-repeat;
+  background: #000 url(../img/stage.gif) no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -243,51 +243,87 @@ body iframe {
 }
 
 #summits #speakers-container {
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 30px;
 }
 
 #summits #speakers-container .img-container {
-  width: 300px;
-  height: 300px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#summits #speakers-container .img-container-1 {
+  width: 150px;
+  height: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 #summits #speakers-container .speaker-name {
-  text-transform: uppercase;
   font-weight: bold;
-  color: black;
-  padding-top: 300px;
-  font-family: 'Raleway';
-  font-size: 2rem;
+  text-shadow: 3px 3px 5px black;
+  color: white;
+  font-size: 20px;
+  padding-top: 195px;
 }
 
-#summits #speakers-container #carla {
-  background: url(../img/speakers/vision2020/carla.gif);
-  background-size: cover;
+#summits #speakers-container .speaker-name-1 {
+  font-weight: bold;
+  text-shadow: 3px 3px 5px black;
+  color: white;
+  font-size: 20px;
+  padding-top: 145px;
+}
+
+#summits #speakers-container #sarah {
+  background: url(../img/speakers/vision2020/sarah.gif);
+  background-position: center;
+}
+
+#summits #speakers-container #dillon {
+  background: url(../img/speakers/vision2020/dillon.gif);
+  background-position: center;
+}
+
+#summits #speakers-container #shadille {
+  background: url(../img/speakers/vision2020/shadille.gif);
+  background-position: center;
+}
+
+#summits #speakers-container #james_george {
+  background: url(../img/speakers/vision2020/james&george.gif);
+  background-position: center;
 }
 
 #summits #speakers-container #josh {
   background: url(../img/speakers/vision2020/josh.gif);
-  background-size: cover;
-}
-
-#summits #speakers-container #tyler {
-  background: url(../img/speakers/vision2020/tyler.gif);
-  background-size: cover;
+  background-position: center;
 }
 
 #summits #speakers-container #paul {
   background: url(../img/speakers/vision2020/paul.gif);
-  background-size: cover;
+  background-position: center;
+}
+
+#summits #speakers-container #carla {
+  background: url(../img/speakers/vision2020/carla.gif);
+  background-position: center;
+}
+
+#summits #speakers-container #ty {
+  background: url(../img/speakers/vision2020/tyler.gif);
+  background-position: center;
 }
 
 #summits #speakers-container #lauren {
   background: url(../img/speakers/vision2020/lauren.gif);
-  background-size: cover;
+  background-position: center;
 }
 
 #past-events .events-container {

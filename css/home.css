@@ -237,12 +237,10 @@
 }
 
 #journey_ambassador .container .btn {
-  -webkit-transition: -webkit-transform 1s cubic-bezier(0.45, 0.62, 0.12, 1.91);
-  transition: -webkit-transform 1s cubic-bezier(0.45, 0.62, 0.12, 1.91);
-  transition: transform 1s cubic-bezier(0.45, 0.62, 0.12, 1.91);
-  transition: transform 1s cubic-bezier(0.45, 0.62, 0.12, 1.91), -webkit-transform 1s cubic-bezier(0.45, 0.62, 0.12, 1.91);
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
   background: #26B3BF;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 #journey_ambassador .container .btn strong {
@@ -250,8 +248,10 @@
 }
 
 #journey_ambassador .container .btn:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  border-color: white;
+  border-radius: 30px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #journey_ambassador h1 {
