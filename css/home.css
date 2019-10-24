@@ -240,7 +240,7 @@
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   background: #26B3BF;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 #journey_ambassador .container .btn strong {
@@ -249,7 +249,7 @@
 
 #journey_ambassador .container .btn:hover {
   border-color: white;
-  border-radius: 30px;
+  border-radius: 10px;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }

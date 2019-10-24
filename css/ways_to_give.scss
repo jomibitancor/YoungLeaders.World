@@ -193,13 +193,29 @@ body{
         }
     }
 
-    button{
+    
+    .btn{
+      // transition: all .5s cubic-bezier(.45,.62,.12,1.91);
+      transition: all 0.1s ease-in;
+      background: $primary;
+      border-radius: 5px;
+      border-color: $primary;
+
+      strong{
+        text-transform: uppercase;
+      }
       a{
         color: white;
+        font-family: 'Roboto Slab', serif;
       }
-      a:hover{
-        color: $primary;
-      }
+    }
+
+    .btn:hover{      
+      // background: transparent;
+      border-color: white;
+      border-radius: 10px;
+      // font-size: 14px;
+      // transform: scale(1.05);
     }
 }
 

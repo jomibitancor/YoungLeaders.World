@@ -173,12 +173,26 @@ body .topBotomBordersOut a:hover:before, body .topBotomBordersOut a:hover:after 
   list-style-type: none;
 }
 
-#ways_to_give button a {
-  color: white;
+#ways_to_give .btn {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  background: #26B3BF;
+  border-radius: 5px;
+  border-color: #26B3BF;
 }
 
-#ways_to_give button a:hover {
-  color: #26B3BF;
+#ways_to_give .btn strong {
+  text-transform: uppercase;
+}
+
+#ways_to_give .btn a {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+#ways_to_give .btn:hover {
+  border-color: white;
+  border-radius: 10px;
 }
 
 #footer {
