@@ -307,39 +307,6 @@ body{
             color: black;
         }
 
-        a{
-            position: relative;
-            font-size: 1.5rem;
-            text-decoration: none;
-            margin-top: 20px;
-            display: block;
-            text-align: center;
-            color: gray; 
-            transition: color 2s cubic-bezier(0,1.11,.49,.98);
-            transition: font-weight 0.5s cubic-bezier(0,1.11,.49,.98);
-        }
-        a::after{
-            
-            border-top: .1em solid $primary;
-            content: "";
-            position: absolute;
-                right: 49%;
-                top: 100%;
-                left: 49%;
-            transition: all 2s cubic-bezier(0,1.11,.49,.98);
-            // transition: left 2s cubic-bezier(0,1.11,.49,.98);
-        }
-        a:hover{
-            text-decoration: none;
-            color: $primary;
-            font-weight: 500;
-        }
-        a:hover::after{
-            border-radius: 50%;
-            right: 10%;
-            left: 10%;  
-        }
-        
         .overlay{
             position: absolute;
             top: 0;
@@ -430,6 +397,29 @@ body{
         #lauren{
             background: url(../img/speakers/vision2020/lauren.gif);
             background-position: center;
+        }
+    }
+
+    .form-container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; 
+        background: white;
+        opacity: 0.8;
+        border: $primary 10px solid;
+
+        h3{
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 40px;
+            color: black;
+        }
+        p{
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 20px;
+        }
+        label{
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 20px;
         }
     }
 }
