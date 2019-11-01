@@ -163,7 +163,7 @@ body iframe {
 }
 
 #summits .container {
-  padding: 80px 0px 80px 0px;
+  padding: 80px 0px 0px 0px;
 }
 
 #summits strong {
@@ -290,28 +290,31 @@ body iframe {
 }
 
 #summits .form-container {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   background: white;
   opacity: 0.8;
   border: #26b3bf 10px solid;
+  text-align: left;
 }
 
 #summits .form-container h3 {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   color: black;
 }
 
 #summits .form-container p {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 #summits .form-container label {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 #past-events .events-container {
