@@ -296,6 +296,29 @@ body{
         font-weight: 500;
     }
 
+    .btn{
+        // transition: all .5s cubic-bezier(.45,.62,.12,1.91);
+        transition: all 0.1s ease-in;
+        // background: rgba(255, 255, 255, 0.5);
+        background: $primary;
+        border: $primary solid 2px;
+        border-radius: 0px;
+        width: 100%;
+        z-index: 1;
+  
+        h2{
+            color: white;
+            text-shadow: 3px 3px 10px black;
+        }
+        a{
+            text-decoration: none;
+        }
+      }
+
+      .btn:hover{
+        border-color: white;
+      }
+
     .description{
         position: relative;
         z-index: 1;
@@ -397,32 +420,6 @@ body{
         #lauren{
             background: url(../img/speakers/vision2020/lauren.gif);
             background-position: center;
-        }
-    }
-
-    .form-container{
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto; 
-        background: white;
-        opacity: 0.8;
-        border: $primary 10px solid;
-        text-align: left;
-
-        h3{
-            font-family: 'Roboto Slab', sans-serif;
-            font-size: 60px;
-            color: black;
-        }
-        p{
-            font-family: 'Roboto Slab', sans-serif;
-            font-size: 30px;
-            line-height: 30px;
-        }
-        label{
-            font-family: 'Roboto Slab', sans-serif;
-            font-size: 30px;
-            line-height: 30px;
         }
     }
 }

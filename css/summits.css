@@ -173,6 +173,29 @@ body iframe {
   font-weight: 500;
 }
 
+#summits .btn {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  background: #26b3bf;
+  border: #26b3bf solid 2px;
+  border-radius: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#summits .btn h2 {
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+#summits .btn a {
+  text-decoration: none;
+}
+
+#summits .btn:hover {
+  border-color: white;
+}
+
 #summits .description {
   position: relative;
   z-index: 1;
@@ -287,34 +310,6 @@ body iframe {
 #summits #speakers-container #lauren {
   background: url(../img/speakers/vision2020/lauren.gif);
   background-position: center;
-}
-
-#summits .form-container {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
-  opacity: 0.8;
-  border: #26b3bf 10px solid;
-  text-align: left;
-}
-
-#summits .form-container h3 {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 60px;
-  color: black;
-}
-
-#summits .form-container p {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-#summits .form-container label {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 30px;
-  line-height: 30px;
 }
 
 #past-events .events-container {
