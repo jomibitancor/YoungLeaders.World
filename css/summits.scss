@@ -1,103 +1,11 @@
-$primary: #26b3bf;
-$gray: #F5F2F2;
-
-.navbar{
-    padding: 18px;
-    background: white;
-    transition: all 1s cubic-bezier(.61,.2,.43,.99);
- 
-    .nav-item{
-        // padding-right: 2rem; room for Ways To Give
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-
-
-    .logo-container{
-      width: 140px;
-      margin-top: -20px;
-      margin-bottom: -20px;
-      transition: all 1s cubic-bezier(.61,.2,.43,.99);
-
-      img{
-        width: 100%;
-      }
-    }
-
-    .nav-link{
-      transition: all 1s cubic-bezier(.61,.2,.43,.99);
-    }
-
-    a{
-      color: gray;
-      text-decoration: none;
-      font: 1.4rem Raleway;
-      margin: 0px 10px;
-      padding: 10px 10px;
-      position: relative;
-      z-index: 0;
-      cursor: pointer;
-    }
-
-    
-
-    .topBotomBordersOut a:before, .topBotomBordersOut a:after
-    {
-        position: absolute;
-        left: 0px;
-        width: 100%;
-        height: 2px;
-        background: $primary;
-        content: "";
-        opacity: 0;
-        transition: all 0.2s;
-    }
-    .topBotomBordersOut a:before{
-        top: 0px;
-        transform: translateY(10px);
-    }
-
-    .topBotomBordersOut a:after{
-        bottom: 0px;
-        transform: translateY(-10px);
-    }
-
-    .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
+$gray: #322B2B;
 
 body{
     background-color: #f5f2f2;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23187091' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23317eb5' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%235cadc0' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%236fbcbe' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23679ec3' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23457894' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%236f98c8' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234394be' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2353649c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%233187c1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%238895cc' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23223768' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Roboto Slab', sans-serif;
     overflow-x: hidden;
-
-    h1{
-        text-transform: uppercase;
-        font-size: 100px;
-        margin-bottom: 0;
-        text-shadow: 2px 2px 5px black;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    h3{
-        color: black;
-        text-transform: uppercase;
-        font-size: 75px;
-        text-shadow: 5px 5px 5px white;
-        font-weight: 500;
-    }
-
-    h4{
-        text-align: center;
-        font-size: 30px;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-    }
 
     .city-header-text{
         font-size: 3rem;
@@ -105,21 +13,6 @@ body{
         color: white;
         text-shadow: 2px 2px 5px black;
         margin: 0 0 20px 0;
-    }
-
-    .header-text{
-        text-align: center;
-        font-size: 3rem;
-        padding-bottom: 20px;
-        border-bottom: white solid 1px;
-        margin-bottom: 50px;
-        color: white;
-        text-shadow: 2px 2px 5px black;
-    }
-
-    .padding{
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 
     iframe{
@@ -154,201 +47,140 @@ body{
 
 #introduction{
     font-size: 1.5rem;
-    background: $gray;
     text-align: center;
+    background: #F5F2F2;
     box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.75);
 }
 
-#events{
-    // overflow-x: hidden;
-    // position: relative;
-    // border-radius: 1px;
-    // box-shadow: 2px 1px 20px black;
-    // text-align: center;
-    // height: auto;
-    // color: white;
-    // background: url(../img/edmonton_bg.gif);
-    // background-size: cover;
-  
-    // .white-border{
-    //   border-bottom: 1px #ddd solid;
-    //   width: 100%;
-    //   height: 10vh;
-    // }
-  
-    // .event-description{
-    //   font-size: 30px;
-    // }
-  
-    // .events-overlay{
-    //   height: 100%;
-    //   width: 100vw;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   background: $primary;
-    //   z-index: 0;
-    //   opacity: 0.1;
-    // }
-  
-    // .muted{
-    //   font-style: italic;
-    // }
-  
-    // #iskl{
-    //   border-radius: 20px;
-    //   box-shadow: 2px 1px 10px black;
-    // }
-  
-    // #iskl-div{
-    //     margin-top: -15px;
-    //   #iskl-link{
-    //     text-decoration: none;
-    //     font-style: italic; 
-    //     color: #ddd;
-    //     text-shadow: none;
-    //     font-size: 40px;
-    //   }
-    // }
-    
-  
-    // #speakers-attending{
-    //   a{
-    //     color: whitesmoke;
-    //     text-decoration: none;
-    //     font: 30px Roboto Slab;
-    //     margin: 0px 10px;
-    //     padding: 10px 10px;
-    //     position: relative;
-    //     z-index: 0;
-    //     cursor: pointer;
-    //   }
-    //   a:hover{
-    //     color: $primary;
-    //   }
-     
-    //   .topBotomBordersOut a:before, .topBotomBordersOut a:after
-    //   {
-    //       position: absolute;
-    //       left: 0px;
-    //       width: 100%;
-    //       height: 2px;
-    //       background: $primary;
-    //       content: "";
-    //       opacity: 0;
-    //       transition: all 0.2s;
-    //   }
-    //   .topBotomBordersOut a:before{
-    //       top: 0px;
-    //       transform: translateY(10px);
-    //   }
-  
-    //   .topBotomBordersOut a:after{
-    //       bottom: 0px;
-    //       transform: translateY(-10px);
-    //   }
-  
-    //   .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
-    //       opacity: 1;
-    //       transform: translateY(0px);
-    //   }
-    // }   
-  
-    // .events-heading{
-    //     h1{
-    //         font-size: 45px;
-    //         font-weight: lighter;
-    //         width: 75%;
-    //         margin: auto;
-    //         padding-bottom: 5px;
-    //         border-bottom: 1px white solid;
-    //         text-shadow: 0px 0px white; 
-    //     }
-    // }
-      
-    // h1{
-    // font-size: 50px;
-    // text-shadow: 5px 5px 5px black;
-    // }
-  
+.modal-open{
+    padding:0 !important;
+    overflow-y: auto;
+}
 
-    // ul{
-    //     text-align: left;
-    //     list-style-type: circle;
-    // }
+.modal-title{
+    font-family: 'Raleway', serif !important;
+    text-transform: uppercase;
+    margin-left: auto;
+}
 
-  }
+.modal-dialog{
+    max-width: 700px;
+}
+
+.modal-body{
+    img{
+        width: 100%;
+        height: 50%;
+    }
+    h1{
+        font-size: 30px !important;
+        color: black !important;
+        text-shadow: none !important;
+    }
+    h3{
+        color: black !important;
+        text-shadow: none !important;
+    }
+    p{
+        font-size: 20px !important;
+        color: black !important;
+        text-shadow: none !important;
+    }
+}
 
 #summits{
-    
     position: relative;
-    text-align: center;
-
-    .container{
-        padding: 80px 0px 0px 0px;
-        
+    
+    .overlay{  // VISION2020
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        background: #F5F2F2;
+        border: #26b3bf solid 10px;
+        // opacity: 0.8;
+        z-index: -1;
     }
 
-    strong{
-        text-transform: uppercase;
-        font-size: 75px;
-        text-shadow: 5px 5px 5px white;
-        font-weight: 500;
+    h1{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
     }
 
-    .btn{
-        // transition: all .5s cubic-bezier(.45,.62,.12,1.91);
-        transition: all 0.1s ease-in;
-        // background: rgba(255, 255, 255, 0.5);
-        background: $primary;
-        border: $primary solid 2px;
-        border-radius: 0px;
-        width: 100%;
-        z-index: 1;
-  
-        h2{
-            color: white;
-            text-shadow: 3px 3px 10px black;
-        }
-        a{
-            text-decoration: none;
-        }
-      }
+    h2{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
+    h3{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
 
-      .btn:hover{
-        border-color: white;
-      }
-
-    .description{
-        position: relative;
-        z-index: 1;
-        padding-top: 10px;
-        padding-bottom: 25px;
-
-        h4{
-            font-size: 1.5rem;
-            color: black;
-        }
-
-        .overlay{
-            position: absolute;
-            top: 0;
-            left: 0;
+    #speaker-container-section{
+        .btn{
+            height: 100%; 
             width: 100%;
-            height: 100%;
-            background: $gray;
-            border: #26b3bf solid 10px;
-            opacity: 0.8;
-            z-index: -1;
         }
 
-        .col{
-            padding: 100px 0px 100px 0px;
+        .btn:hover{
+            border: #4fbfc9 solid 5px;
         }
+
+        .speaker-container{
+            padding: 0px 5px 0px 5px;
+            margin: 35px 0px 35px 0px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .speaker-name{
+            text-shadow: 3px 3px 7px black;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        #sarah-wells{
+            background: url(../img/speakers/vision2020/sarah.gif);
+            background-position: center;
+        }
+        #dillon-mendes{
+            background: url(../img/speakers/vision2020/dillon.gif);
+            background-position: center;
+        }
+        #shadille-estepan{
+            background: url(../img/speakers/vision2020/shadille.gif);
+            background-position: center;
+        }
+        #james-and-george{
+            background: url(../img/speakers/vision2020/james&george.gif);
+            background-position: center;
+        }        
     }
 
-    .img-fluid{
-        max-width: 50%;
+    #day-two-container-section{
+        li{
+            p{
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5px;
+                padding-left: 20px;
+            }
+            i{
+                padding-right: 10px;
+            }
+        }
     }
 
     #speakers-container{
@@ -371,35 +203,13 @@ body{
             margin-top: 20px;
             margin-bottom: 20px;
         }
-        .speaker-name{
-            font-weight: bold;
-            text-shadow: 3px 3px 5px black;
-            color: white;
-            font-size: 20px;
-            padding-top: 195px;
-        }
+        
         .speaker-name-1{
-            font-weight: bold;
-            text-shadow: 3px 3px 5px black;
+            font-family: 'Roboto Slab', serif;
+            text-shadow: 3px 3px 7px black;
             color: white;
             font-size: 20px;
-            padding-top: 145px;
-        }
-        #sarah{
-            background: url(../img/speakers/vision2020/sarah.gif);
-            background-position: center;
-        }
-        #dillon{
-            background: url(../img/speakers/vision2020/dillon.gif);
-            background-position: center;
-        }
-        #shadille{
-            background: url(../img/speakers/vision2020/shadille.gif);
-            background-position: center;
-        }
-        #james_george{
-            background: url(../img/speakers/vision2020/james&george.gif);
-            background-position: center;
+            padding-top: 155px;
         }
         #josh{
             background: url(../img/speakers/vision2020/josh.gif);
@@ -422,9 +232,54 @@ body{
             background-position: center;
         }
     }
+
+    #paul-woida-container{
+        position: relative;
+        .overlay{  // VISION2020
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            background: #F5F2F2;
+            border: #26b3bf solid 5px;
+            // opacity: 0.8;
+            z-index: -1;
+        }
+
+        .img-container{
+            margin: 15px 0px 15px 15px;
+        }
+
+        .beside-img-container{
+            // margin: 30px 20px 15px 15px;
+            h1{
+                color: black;
+                text-shadow: none;
+            }
+            p{
+                color: black;
+                text-shadow: none;
+            }
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-right: 50px;
+        }
+    }
 }
 
 #past-events{
+    h1{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
+    p{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
+
     .events-container{
         padding: 80px 0px 80px 0px;
     }
@@ -436,6 +291,16 @@ body{
 }
 
 #past-summits{
+    h1{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
+    p{
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 10px black;
+    }
     .past-conferences-container{
         padding-left: 30px;
         padding-right: 30px;
@@ -578,12 +443,10 @@ body{
                     margin-right: 10px;
                     margin-left: 10px;
                     .col{
-                        
-                            iframe{
-                                width: 100%;
-                                height: 50vh;
-                            }
-                        
+                        iframe{
+                            width: 100%;
+                            height: 50vh;
+                        }
                     }
                 }
             }

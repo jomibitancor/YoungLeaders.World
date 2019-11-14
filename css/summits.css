@@ -1,103 +1,9 @@
-.navbar {
-  padding: 18px;
-  background: white;
-  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-}
-
-.navbar .nav-item {
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.navbar .logo-container {
-  width: 140px;
-  margin-top: -20px;
-  margin-bottom: -20px;
-  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-}
-
-.navbar .logo-container img {
-  width: 100%;
-}
-
-.navbar .nav-link {
-  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-}
-
-.navbar a {
-  color: gray;
-  text-decoration: none;
-  font: 1.4rem Raleway;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-.navbar .topBotomBordersOut a:before, .navbar .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #26b3bf;
-  content: "";
-  opacity: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.navbar .topBotomBordersOut a:before {
-  top: 0px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-.navbar .topBotomBordersOut a:after {
-  bottom: 0px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.navbar .topBotomBordersOut a:hover:before, .navbar .topBotomBordersOut a:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
 body {
   background-color: #f5f2f2;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23187091' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23317eb5' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%235cadc0' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%236fbcbe' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23679ec3' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23457894' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%236f98c8' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234394be' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2353649c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%233187c1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%238895cc' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23223768' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Roboto Slab', sans-serif;
   overflow-x: hidden;
-}
-
-body h1 {
-  text-transform: uppercase;
-  font-size: 100px;
-  margin-bottom: 0;
-  text-shadow: 2px 2px 5px black;
-  font-family: 'Raleway', sans-serif;
-}
-
-body h3 {
-  color: black;
-  text-transform: uppercase;
-  font-size: 75px;
-  text-shadow: 5px 5px 5px white;
-  font-weight: 500;
-}
-
-body h4 {
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  text-shadow: 3px 3px 3px black;
 }
 
 body .city-header-text {
@@ -106,21 +12,6 @@ body .city-header-text {
   color: white;
   text-shadow: 2px 2px 5px black;
   margin: 0 0 20px 0;
-}
-
-body .header-text {
-  text-align: center;
-  font-size: 3rem;
-  padding-bottom: 20px;
-  border-bottom: white solid 1px;
-  margin-bottom: 50px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-}
-
-body .padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 body iframe {
@@ -151,64 +42,54 @@ body iframe {
 
 #introduction {
   font-size: 1.5rem;
-  background: #F5F2F2;
   text-align: center;
+  background: #F5F2F2;
   -webkit-box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
 }
 
+.modal-open {
+  padding: 0 !important;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-family: 'Raleway', serif !important;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.modal-dialog {
+  max-width: 700px;
+}
+
+.modal-body img {
+  width: 100%;
+  height: 50%;
+}
+
+.modal-body h1 {
+  font-size: 30px !important;
+  color: black !important;
+  text-shadow: none !important;
+}
+
+.modal-body h3 {
+  color: black !important;
+  text-shadow: none !important;
+}
+
+.modal-body p {
+  font-size: 20px !important;
+  color: black !important;
+  text-shadow: none !important;
+}
+
 #summits {
   position: relative;
-  text-align: center;
 }
 
-#summits .container {
-  padding: 80px 0px 0px 0px;
-}
-
-#summits strong {
-  text-transform: uppercase;
-  font-size: 75px;
-  text-shadow: 5px 5px 5px white;
-  font-weight: 500;
-}
-
-#summits .btn {
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  background: #26b3bf;
-  border: #26b3bf solid 2px;
-  border-radius: 0px;
-  width: 100%;
-  z-index: 1;
-}
-
-#summits .btn h2 {
-  color: white;
-  text-shadow: 3px 3px 10px black;
-}
-
-#summits .btn a {
-  text-decoration: none;
-}
-
-#summits .btn:hover {
-  border-color: white;
-}
-
-#summits .description {
-  position: relative;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 25px;
-}
-
-#summits .description h4 {
-  font-size: 1.5rem;
-  color: black;
-}
-
-#summits .description .overlay {
+#summits .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -216,16 +97,87 @@ body iframe {
   height: 100%;
   background: #F5F2F2;
   border: #26b3bf solid 10px;
-  opacity: 0.8;
   z-index: -1;
 }
 
-#summits .description .col {
-  padding: 100px 0px 100px 0px;
+#summits h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
 }
 
-#summits .img-fluid {
-  max-width: 50%;
+#summits h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+#summits h3 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+#summits p {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+#summits #speaker-container-section .btn {
+  height: 100%;
+  width: 100%;
+}
+
+#summits #speaker-container-section .btn:hover {
+  border: #4fbfc9 solid 5px;
+}
+
+#summits #speaker-container-section .speaker-container {
+  padding: 0px 5px 0px 5px;
+  margin: 35px 0px 35px 0px;
+  width: 200px;
+  height: 200px;
+}
+
+#summits #speaker-container-section .speaker-name {
+  text-shadow: 3px 3px 7px black;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#summits #speaker-container-section #sarah-wells {
+  background: url(../img/speakers/vision2020/sarah.gif);
+  background-position: center;
+}
+
+#summits #speaker-container-section #dillon-mendes {
+  background: url(../img/speakers/vision2020/dillon.gif);
+  background-position: center;
+}
+
+#summits #speaker-container-section #shadille-estepan {
+  background: url(../img/speakers/vision2020/shadille.gif);
+  background-position: center;
+}
+
+#summits #speaker-container-section #james-and-george {
+  background: url(../img/speakers/vision2020/james&george.gif);
+  background-position: center;
+}
+
+#summits #day-two-container-section li p {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+#summits #day-two-container-section li i {
+  padding-right: 10px;
 }
 
 #summits #speakers-container {
@@ -251,40 +203,12 @@ body iframe {
   margin-bottom: 20px;
 }
 
-#summits #speakers-container .speaker-name {
-  font-weight: bold;
-  text-shadow: 3px 3px 5px black;
-  color: white;
-  font-size: 20px;
-  padding-top: 195px;
-}
-
 #summits #speakers-container .speaker-name-1 {
-  font-weight: bold;
-  text-shadow: 3px 3px 5px black;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 3px 3px 7px black;
   color: white;
   font-size: 20px;
-  padding-top: 145px;
-}
-
-#summits #speakers-container #sarah {
-  background: url(../img/speakers/vision2020/sarah.gif);
-  background-position: center;
-}
-
-#summits #speakers-container #dillon {
-  background: url(../img/speakers/vision2020/dillon.gif);
-  background-position: center;
-}
-
-#summits #speakers-container #shadille {
-  background: url(../img/speakers/vision2020/shadille.gif);
-  background-position: center;
-}
-
-#summits #speakers-container #james_george {
-  background: url(../img/speakers/vision2020/james&george.gif);
-  background-position: center;
+  padding-top: 155px;
 }
 
 #summits #speakers-container #josh {
@@ -312,6 +236,53 @@ body iframe {
   background-position: center;
 }
 
+#summits #paul-woida-container {
+  position: relative;
+}
+
+#summits #paul-woida-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F5F2F2;
+  border: #26b3bf solid 5px;
+  z-index: -1;
+}
+
+#summits #paul-woida-container .img-container {
+  margin: 15px 0px 15px 15px;
+}
+
+#summits #paul-woida-container .beside-img-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 50px;
+}
+
+#summits #paul-woida-container .beside-img-container h1 {
+  color: black;
+  text-shadow: none;
+}
+
+#summits #paul-woida-container .beside-img-container p {
+  color: black;
+  text-shadow: none;
+}
+
+#past-events h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+#past-events p {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
 #past-events .events-container {
   padding: 80px 0px 80px 0px;
 }
@@ -320,6 +291,18 @@ body iframe {
   border-radius: 10px;
   -webkit-box-shadow: white 0px 0px 10px;
           box-shadow: white 0px 0px 10px;
+}
+
+#past-summits h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+#past-summits p {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 10px black;
 }
 
 #past-summits .past-conferences-container {

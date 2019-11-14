@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://kit.fontawesome.com/f1ab9365d8.js"></script>
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -63,10 +64,11 @@
     <!-- NAVBAR END -->
 
     <section id="header">
+        <!--Don't delete. For JavaScript scroll animation-->
     </section>
 
     <!-- VIDEO -->
-    <header class="v-header container">
+    <header id="v-header" class="container">
         <div class="fullscreen-video-wrap">
             <video loop muted="true" width="1750px" class="pt-5">
                 <source src="img/VideoBackground.mp4" type="video/mp4" />
@@ -84,26 +86,7 @@
                         <h1 id="quote2">Leadership is a mindset, not a status.</h1>
                     </div>
                 </div>
-
             </div>
-
-            <!-- <div id="slider" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="quote-container d-flex align-items-center justify-content-center">
-                            <h1 id="quote1">For Growth & Good.</h1>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <div class="quote-container d-flex align-items-center justify-content-center">
-                            <h1 id="quote2">Leadership is a mindset, not a status.</h1>
-                        </div>
-
-                    </div>
-                </div>
-            </div> -->
-
         </div>
     </header>
     <!--VIDEO END -->
@@ -112,14 +95,16 @@
     <section id="statistics" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col text-center">
                     <h1>
                         For Young Leaders, <br> By Young Leaders
                     </h1>
+                    <div class="grey-line-and-margins"></div>
                 </div>
+
             </div>
             <div class="row pt-3">
-                <p class="lead">
+                <p class="text-center">
                     We collaborate with young people around the world to help them discover life leadership. YL.W is
                     dedicated to helping young people, ages 13-21, understand how to develop a leader mindset. How to
                     think like a leader, make decisions like a leader and articulate your goals. We believe leadership
@@ -134,7 +119,7 @@
                     <div id="box-1" class="box">
                         <div class="box-inner">
                             <i class="fas fa-user-graduate fa-3x"></i>
-                            <h2 onscroll="" class="counter pt-0" data-count="10546">
+                            <h2 onscroll="" class="counter pt-0" data-count="11496">
                                 9999
                             </h2>
                             <p class="pt-1">Student Leaders Trained</p>
@@ -172,23 +157,24 @@
     <!-- AMBASSADOR VISITS -->
     <section id="journey_ambassador" class="py-5">
         <div class="overlay"></div>
-        <div class="row pb-5">
+        <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <h1>VISION 2020</h1>
                     </div>
                 </div>
-                <div class="row pt-3">
+                <div class="row">
                     <div class="col">
-                            <iframe style="width: 50%; height: 350px;" src="https://www.youtube.com/embed/kfGYMiwofbg" frameborder="0"
+                        <iframe style="width: 50%; height: 350px;" src="https://www.youtube.com/embed/kfGYMiwofbg"
+                            frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="row pt-2">
+                <div class="row">
                     <div class="col">
-                        <p class="lead">
+                        <p>
                             Leadership is a Mindset Summit <br>
                             Edmonton EXPO Centre <br>
                             April 7-8, 2020
@@ -198,46 +184,15 @@
                 <div class="d-flex justify-content-center">
                     <div class="button-container">
                         <button class="btn btn-primary">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJGRwa4R0M_W7DB2yjJXHYUxCI3BVITAk8_31fA8X6TpswOg/viewform?usp=sf_link" target="_blank">
-                                <div>REGISTER FOR</div>
-                                <div><strong> VISION 2020</strong></div>
+                            <a href="summits.html#summits">
+                                <div class="btn-text">MORE INFO</div>
                             </a>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>Leader's Journey</h1>
-                    </div>
-                </div>
-                <div class="row pt-2">
-                    <div class="col">
-                        <p class="lead">
-                            YoungLeaders.World helps students discover power and
-                            potential of leadership: the ability to set a new direction and bring yourself and others
-                            along. We have created a leadership curriculum
-                            to help students
-                            develop a mindset and skill set of a leader.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center">
-                    <div class="button-container">
-                        <button class="btn btn-primary">
-                            <a href="leaders_journey.html">
-                                <div>BEGIN YOUR</div>
-                                <div><strong> Leader's Journey</strong></div>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="py-4"></div>
         <div class="row">
             <div class="container">
                 <div class="row">
@@ -247,15 +202,18 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        <p class="lead">
+                        <p>
                             Want to learn more about the leadership work that YL.W does? Want to find out more about
                             upcoming
                             Summits?
                             Book a YoungLeaders.World student ambassador to come to your school for an assembly,
                             classroom visit or
                             school event. To find out more, fill in the information below.
-                            *YoungLeaders.World ambassador visits are only available in the Capital Region of
-                            Alberta, Canada.
+                            <p style="font-size: 16px;">
+                                *YoungLeaders.World ambassador visits are only available in the Capital Region of
+                                Alberta, Canada.
+                            </p>
+
                         </p>
                     </div>
                 </div>
@@ -263,8 +221,7 @@
                 <div class="d-flex justify-content-center">
                     <div>
                         <button class="btn btn-primary" data-toggle="modal" data-target="#ambassadorVisit">
-                            <div>BOOK AN</div>
-                            <div><strong> Ambassador Visit</strong></div>
+                            <div class="btn-text">BOOK</div>
                         </button>
                         <!-- AMBASSADOR VISIT FORM -->
                         <div class="modal" id="ambassadorVisit" data-backdrop="false">
@@ -343,8 +300,7 @@
                                             <div>
                                                 <p>
                                                     <span class="send-btn">
-                                                        <input id="btn" class="btn" type="submit"
-                                                            value="Send Message" />
+                                                        <input id="btn" class="btn" type="submit" value="SEND" />
                                                     </span>
                                                 </p>
                                             </div>
@@ -358,15 +314,47 @@
                 </div>
             </div>
         </div>
+        <div class="py-4"></div>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Leader's Journey</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            YoungLeaders.World helps students discover power and
+                            potential of leadership: the ability to set a new direction and bring yourself and others
+                            along. We have created a leadership curriculum
+                            to help students
+                            develop a mindset and skill set of a leader.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="button-container">
+                        <button class="btn btn-primary">
+                            <a href="leaders_journey.html">
+                                <div class="btn-text">BEGIN</div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
     <!-- AMBASSADOR VISITS (END) -->
 
     <!-- PARTNERS -->
-    <section id="partners" class="py-4">
+    <section id="partners" class="py-5">
         <div class="text-center">
             <h1>Organizations That Helped Us Grow</h1>
+            <div class="grey-line-and-margins"></div>
         </div>
 
         <div class="container">
@@ -411,158 +399,36 @@
     </section>
     <!-- PARTNERS (END) -->
 
-    <!-- UPCOMING EVENTS -->
-    <!-- <div id="events">
-        <div class="events-overlay"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col events-heading">
-                    <h1 class="pt-5 pb-2">Upcoming Events</h1>
-                </div>
-            </div> -->
-
-    <!-- EVENT START -->
-    <!-- <div class="row pt-5">
-                <div class="col">
-                    <h1>
-                        YoungLeaders.World at Kuala Lumpur
-                    </h1>
-
-                    <p class="event-description">
-                        September 25 - 27, 2019
-                    </p>
-                    <div class="container">
-                        <p class="muted">"We are looking forward to meeting young leaders at The International School of
-                            Kuala Lumpur for a series of workshops and dialogues." -
-                        </p>
-                    </div>
-                    <div id="iskl-div" class="container">
-                        <h3 id="iskl-link">The International School of Kuala
-                            Lumpur</h3>
-                    </div>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-8">
-                                <a href="https://www.iskl.edu.my/" target="_blank"><img id="iskl" src="img/iskl.png"
-                                        alt="International School of Kuala Lumpur" class="img-fluid"></a>
-                            </div>
-                            <div id="speakers-attending" class="col align-self-center text-left">
-                                <p class="lead">
-                                    Speakers Attending:
-                                </p>
-                                <div class="topBotomBordersOut">
-                                    <p><i class="far fa-hand-point-right fa-2x"></i><a href="speakers.html#carla">Carla
-                                            Cuglietta</a></p>
-                                    <p><i class="far fa-hand-point-right fa-2x"></i><a href="speakers.html#tyler">Tyler
-                                            Waye</a></p>
-                                    <p><i class="far fa-hand-point-right fa-2x"></i><a href="speakers.html#chris">Chris
-                                            Koch</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> -->
-    <!-- EVENT END -->
-
-    <!-- <div class="container">
-                <div class="white-border"></div>
-            </div> -->
-
-
-    <!-- EVENT START -->
-    <!-- <div class="row pt-5">
-                <div class="col">
-                    <h1>
-                        LEADER'S FORUM
-                    </h1>
-
-                    <p class="event-description">
-                        October 9, 2019 <br>
-                        Alberta, Canada <br>
-                        Edmonton Expo Centre <br>
-                        Ballroom 107 <br>
-                        9:30 AM - 2:00 PM
-                    </p>
-                    <div class="container">
-                        <p class="lead">
-                            We are inviting junior and high school students in the Capital Region to an important
-                            meeting. This day will help us shape the VISION2020 Conference,
-                            allow time to network with other schools who are passionate
-                            about leadership, and to attend a free leadership workshop. We
-                            want to shape the leadership conversation together.
-                        </p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2IVvk0124YdTto1icq8xdM5NCi0VNR6pylftW7TkmR6pRxA/viewform?usp=sf_link "
-                            target="_blank" class="btn btn-outline-primary btn-lg text-white">
-                            <i class="fas fa-arrow-right pr-3"></i>
-                            Sign Up Now!
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-    <!-- EVENT END -->
-
-    <!-- <div class="container">
-                <div class="white-border"></div>
-            </div> -->
-
-    <!-- EVENT START -->
-    <!-- <div class="row pt-5">
-                <div class="col">
-                    <h1>
-                        VISION2020
-                    </h1>
-                    <p class="event-description">
-                        April 7, 2020 <br>
-                        Alberta, Canada <br>
-                        Edmonton Expo Centre
-                    </p>
-                    <iframe src="https://www.youtube.com/embed/kfGYMiwofbg" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
-                    <div class="mt-4">
-                        <a href="#" class="btn btn-outline-primary btn text-white disabled mb-5">
-                            <i class="fas fa-ticket-alt pr-3"></i>
-                            Registration Opens November 1, 2019
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-    <!-- EVENT END -->
-
-    <!-- </div>
-    </div> -->
-    <!-- UPCOMING EVENTS (END) -->
-
     <!-- SOCIAL MEDIA -->
     <section id="social">
         <div class="container mt-5 text-center">
-            <h1>Follow Us!</h1>
+            <h1 style="color: white;">Follow Us!</h1>
+            <div style="border-color: white;" class="grey-line-and-margins"></div>
         </div>
 
         <div class="container">
             <div class="d-flex justify-content-center">
-                <div>
+                <div class="icon-container">
                     <a href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
                         <i class="fab fa-facebook-f fa-5x"></i></a></div>
-                <div>
+                <div class="icon-container">
                     <a href="https://www.instagram.com/ylworld/" target="_blank">
                         <i class="fab fa-instagram fa-5x"></i></a></div>
-                <div>
+                <div class="icon-container">
                     <a href="https://twitter.com/ylworld" target="_blank">
                         <i class="fab fa-twitter fa-5x"></i></a></div>
             </div>
         </div>
 
         <div class="instagram-container">
-            <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/da9cd2dd1c685af980e5a823ec87413e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-
+            <!-- LightWidget WIDGET -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+                src="https://cdn.lightwidget.com/widgets/da9cd2dd1c685af980e5a823ec87413e.html" scrolling="no"
+                allowtransparency="true" class="lightwidget-widget"
+                style="width:100%;border:0;overflow:hidden;"></iframe>
         </div>
+        <div class="py-5"></div>
 
-      
     </section>
     <!-- SOCIAL MEDIA -->
 
@@ -609,7 +475,7 @@
 
             <div class="row text-center pt-2">
                 <div class="col">
-                    <p class="lead">
+                    <p>
                         &copy; 2019 YoungLeaders.World
                     </p>
                 </div>

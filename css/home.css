@@ -1,85 +1,4 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
-}
-
-.btn {
-  background-color: #26B3BF !important;
-}
-
-.navbar {
-  padding: 18px;
-  background: white;
-  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  font-family: 'Raleway', sans-serif;
-}
-
-.navbar .nav-item {
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.navbar .logo-container {
-  width: 140px;
-  margin-top: -20px;
-  margin-bottom: -20px;
-  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-}
-
-.navbar .logo-container img {
-  width: 100%;
-}
-
-.navbar .nav-link {
-  -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-  transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
-}
-
-.navbar a {
-  color: gray;
-  text-decoration: none;
-  font: 1.4rem Raleway;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-.navbar .topBotomBordersOut a:before, .navbar .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #26B3BF;
-  content: "";
-  opacity: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.navbar .topBotomBordersOut a:before {
-  top: 0px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-.navbar .topBotomBordersOut a:after {
-  bottom: 0px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.navbar .topBotomBordersOut a:hover:before, .navbar .topBotomBordersOut a:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.v-header {
+#v-header {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,12 +9,7 @@
   color: white;
 }
 
-.v-header b {
-  color: #26B3BF;
-  text-shadow: none;
-}
-
-.v-header .fullscreen-video-wrap {
+#v-header .fullscreen-video-wrap {
   border-bottom: 1px #26B3BF solid;
   -webkit-box-shadow: 1px 1px 2px #26B3BF;
           box-shadow: 1px 1px 2px #26B3BF;
@@ -107,12 +21,12 @@
   overflow: hidden;
 }
 
-.v-header .fullscreen-video-wrap video {
+#v-header .fullscreen-video-wrap video {
   min-width: 100%;
   min-height: 100%;
 }
 
-.v-header .header-overlay {
+#v-header .header-overlay {
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -123,23 +37,23 @@
   opacity: 0.5;
 }
 
-.v-header .header-container {
+#v-header .header-container {
   z-index: 2;
   width: 100%;
   height: 40vh;
 }
 
-.v-header .header-container h1 {
+#v-header .header-container h1 {
   font-family: Raleway, serif;
   text-align: center;
   text-transform: uppercase;
 }
 
-.v-header .header-container #quote1 {
+#v-header .header-container #quote1 {
   font-size: 90px;
 }
 
-.v-header .header-container #quote2 {
+#v-header .header-container #quote2 {
   font-size: 60px;
 }
 
@@ -168,20 +82,6 @@
   margin-top: 10px;
 }
 
-#statistics h1 {
-  text-align: center;
-  font-size: 45px;
-  font-weight: lighter;
-  border-bottom: 1px black solid;
-  font-weight: 100;
-  padding-bottom: 15px;
-}
-
-#statistics .lead {
-  font-size: 20px;
-  text-align: center;
-}
-
 #statistics .box {
   min-width: 220px;
   height: 220px;
@@ -202,6 +102,7 @@
 }
 
 #statistics .box p {
+  font-size: 16px;
   font-weight: 500;
   font-style: italic;
 }
@@ -234,33 +135,6 @@
 
 #journey_ambassador .container {
   z-index: 1;
-}
-
-#journey_ambassador .container .btn {
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  background: #26B3BF;
-  border-radius: 0px;
-}
-
-#journey_ambassador .container .btn strong {
-  text-transform: uppercase;
-}
-
-#journey_ambassador .container .btn:hover {
-  border-color: white;
-}
-
-#journey_ambassador h1 {
-  text-align: center;
-  font-size: 45px;
-  font-weight: lighter;
-  border-bottom: 1px #ddd solid;
-}
-
-#journey_ambassador a {
-  text-decoration: none;
-  color: white;
 }
 
 #journey_ambassador .modal {
@@ -300,161 +174,10 @@
           transform: scale(1);
 }
 
-#partners h1 {
-  font-size: 45px;
-  font-weight: lighter;
-  width: 75%;
-  margin: auto;
-  padding-bottom: 5px;
-  border-bottom: 1px black solid;
-}
-
-#events {
-  overflow-x: hidden;
-  position: relative;
-  border-radius: 1px;
-  -webkit-box-shadow: 2px 1px 20px black;
-          box-shadow: 2px 1px 20px black;
-  text-align: center;
-  height: auto;
-  color: white;
-  background: url(../img/edmonton_bg.gif);
-  background-size: cover;
-}
-
-#events .white-border {
-  border-bottom: 1px #ddd solid;
-  width: 100%;
-  height: 10vh;
-}
-
-#events .event-description {
-  font-size: 30px;
-}
-
-#events .events-overlay {
-  height: 100%;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #26B3BF;
-  z-index: 0;
-  opacity: 0.1;
-}
-
-#events .muted {
-  font-style: italic;
-}
-
-#events #iskl {
-  border-radius: 20px;
-  -webkit-box-shadow: 2px 1px 10px black;
-          box-shadow: 2px 1px 10px black;
-}
-
-#events #iskl-div {
-  margin-top: -15px;
-}
-
-#events #iskl-div #iskl-link {
-  text-decoration: none;
-  font-style: italic;
-  color: #ddd;
-}
-
-#events #speakers-attending a {
-  color: whitesmoke;
-  text-decoration: none;
-  font: 30px Roboto Slab;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-#events #speakers-attending a:hover {
-  color: #26B3BF;
-}
-
-#events #speakers-attending .topBotomBordersOut a:before, #events #speakers-attending .topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #26B3BF;
-  content: "";
-  opacity: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-#events #speakers-attending .topBotomBordersOut a:before {
-  top: 0px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-#events #speakers-attending .topBotomBordersOut a:after {
-  bottom: 0px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-#events #speakers-attending .topBotomBordersOut a:hover:before, #events #speakers-attending .topBotomBordersOut a:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-#events .events-heading h1 {
-  font-size: 45px;
-  font-weight: lighter;
-  width: 75%;
-  margin: auto;
-  padding-bottom: 5px;
-  border-bottom: 1px white solid;
-  text-shadow: 0px 0px white;
-}
-
-#events h1 {
-  font-size: 50px;
-  text-shadow: 5px 5px 5px black;
-}
-
-#events iframe {
-  background: #26B3BF;
-  -webkit-box-shadow: 2px 1px 10px black;
-          box-shadow: 2px 1px 10px black;
-  border-radius: 20px;
-  width: 50%;
-  height: 50vh;
-}
-
 #social {
   overflow-x: hidden;
-  padding-bottom: 30px;
   background: url(../img/edmonton_bg.gif);
   background-size: cover;
-}
-
-#social h1 {
-  font-size: 45px;
-  font-weight: lighter;
-  width: 75%;
-  margin: auto;
-  padding-bottom: 5px;
-  color: white;
-  border-bottom: 1px white solid;
-}
-
-#social .container .d-flex div {
-  padding: 20px;
-}
-
-#social .container .d-flex div a {
-  color: white;
 }
 
 #social .instagram-container {
@@ -463,47 +186,24 @@
   margin-right: auto;
 }
 
-#contact {
-  overflow-x: hidden;
-  background: #322B2B;
+#social .icon-container {
+  padding: 20px;
 }
 
-#contact .display-4 {
-  font-size: 3rem;
+#social i {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   color: white;
 }
 
-#footer {
-  overflow-x: hidden;
-  color: white;
-  background: black;
+#social i:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media (max-width: 766px) and (min-width: 300px) {
-  .lead {
-    margin: 0 20px 10px 20px;
-    font-size: 16px !important;
-  }
-  .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: #f0f0f0;
-    border: 1px solid #aaaaaa;
-    border-radius: 0.25rem;
-    margin-right: 20px;
-  }
-  .navbar-collapse {
-    margin-top: 20px;
-  }
-  .navbar .logo-container img {
-    margin-left: -20px;
-  }
-  .navbar .nav-item a {
-    text-align: left;
-    font: 1.5rem Raleway !important;
-    margin: 5px 5px !important;
-  }
   .v-header .header-container #quote1 {
     font-size: 60px;
   }
@@ -520,9 +220,6 @@
     background: #26B3BF;
     z-index: 1;
     opacity: 1;
-  }
-  .col-sm {
-    margin: 5px;
   }
   #statistics h1 {
     font-size: 30px;

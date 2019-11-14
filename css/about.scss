@@ -1,101 +1,3 @@
-$primary: #26b3bf;
-$gray: #F5F2F2;
-
-.navbar{
-  padding: 18px;
-  background: white;
-  transition: all 1s cubic-bezier(.61,.2,.43,.99);
-  font-family: 'Raleway', sans-serif;
-
-  .nav-item{
-      // padding-right: 2rem; // make room for Ways To Give
-      text-transform: uppercase;
-      text-decoration: none;
-  }
-
-  .logo-container{
-    width: 140px;
-    margin-top: -20px;
-    margin-bottom: -20px;
-    transition: all 1s cubic-bezier(.61,.2,.43,.99);
-
-    img{
-      width: 100%;
-    }
-  }
-
-  .nav-link{
-    transition: all 1s cubic-bezier(.61,.2,.43,.99);
-  }
-
-  a{
-    color: gray;
-    text-decoration: none;
-    font: 1.4rem Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-  }
-
-  
-
-  .topBotomBordersOut a:before, .topBotomBordersOut a:after
-  {
-      position: absolute;
-      left: 0px;
-      width: 100%;
-      height: 2px;
-      background: $primary;
-      content: "";
-      opacity: 0;
-      transition: all 0.2s;
-  }
-  .topBotomBordersOut a:before{
-      top: 0px;
-      transform: translateY(10px);
-  }
-
-  .topBotomBordersOut a:after{
-      bottom: 0px;
-      transform: translateY(-10px);
-  }
-
-  .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
-      opacity: 1;
-      transform: translateY(0px);
-  }
-}
-
-body{
-  font-family: 'Roboto Slab', serif;
-  margin: 0 auto;
-  padding: 0;
-
-  .header{
-    font-size: 45px;
-    font-weight: lighter;
-    width: 75%;
-    margin: auto;
-    border-bottom: 1px black solid;    
-  }
-
-  #our-history{
-    border-bottom: 1px white solid !important;
-  }
-}
-
-.lead{
-    font-weight: 500;
-}
-
-strong{
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    color: $primary;
-}
-
 #mission_vision{
         font-size: 1.5rem;
         background: $gray;
@@ -104,7 +6,6 @@ strong{
 }
 
 #header{
-
     .background-container{  
       background: #000 url(../img/clouds.gif) no-repeat;
       background-size: cover;
@@ -123,13 +24,6 @@ strong{
           width: 100%;
           height: 100%;
           z-index: -1;
-      }
-        
-      h1{
-        font-family: 'Raleway', sans-serif;
-        font-size: 100px;
-        margin-bottom: 0;
-        text-shadow: 2px 2px 5px black;
       }
     }    
 }
