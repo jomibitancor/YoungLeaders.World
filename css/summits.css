@@ -168,16 +168,34 @@ body iframe {
   background-position: center;
 }
 
-#summits #day-two-container-section li p {
+#summits #day-two-container-section a {
+  text-decoration: none;
+  color: #26b3bf;
+  text-shadow: none;
+}
+
+#summits #day-two-container-section a:hover {
+  color: #4fbfc9;
+}
+
+#summits #day-two-container-section p {
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
   padding-left: 20px;
 }
 
-#summits #day-two-container-section li i {
+#summits #day-two-container-section i {
   padding-right: 10px;
+}
+
+#summits #day-two-container-section ul {
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+}
+
+#summits #day-two-container-section .workshop-desc p {
+  color: black;
+  text-shadow: none;
+  font-size: 14px;
 }
 
 #summits #speakers-container {
