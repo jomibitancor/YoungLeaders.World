@@ -112,7 +112,7 @@
   padding: 25px 25px 25px 25px !important;
 }
 
-#journey_ambassador {
+#journey_ambassador_and_events {
   overflow-x: hidden;
   color: white;
   text-align: center;
@@ -122,7 +122,7 @@
   background-size: cover;
 }
 
-#journey_ambassador .overlay {
+#journey_ambassador_and_events .overlay {
   background: black;
   opacity: 0.7;
   position: absolute;
@@ -133,11 +133,11 @@
   z-index: 0;
 }
 
-#journey_ambassador .container {
+#journey_ambassador_and_events .container {
   z-index: 1;
 }
 
-#journey_ambassador .modal {
+#journey_ambassador_and_events .modal {
   color: black;
   margin-top: 120px;
   z-index: 1020;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,AAAA,CACG,SAAS,CAAE,MAAM,CACjB,WAAW,CAAE,qBAAqB,CACrC",
+    "sources": [
+        "../../scss/temporary.scss"
+    ],
+    "names": [],
+    "file": "temporary.min.css"
+}
