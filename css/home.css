@@ -37,6 +37,13 @@
   opacity: 0.5;
 }
 
+@media (max-width: 766px) and (min-width: 300px) {
+  #v-header .header-overlay {
+    background: #26B3BF;
+    opacity: 1;
+  }
+}
+
 #v-header .header-container {
   z-index: 2;
   width: 100%;
@@ -51,6 +58,12 @@
 
 #v-header .header-container #quote1 {
   font-size: 90px;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #v-header .header-container #quote1 {
+    font-size: 60px;
+  }
 }
 
 #v-header .header-container #quote2 {
@@ -114,33 +127,48 @@
 
 #journey_ambassador_and_events {
   overflow-x: hidden;
-  color: white;
-  text-align: center;
-  position: relative;
-  background: url(../img/world_bg.gif) no-repeat;
+  background-color: #f5f5f5;
   background-attachment: fixed;
   background-size: cover;
-}
-
-#journey_ambassador_and_events .overlay {
-  background: black;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-#journey_ambassador_and_events .container {
-  z-index: 1;
 }
 
 #journey_ambassador_and_events .modal {
   color: black;
   margin-top: 120px;
   z-index: 1020;
+}
+
+@media (min-width: 990px) {
+  #journey_ambassador_and_events #events-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #journey_ambassador_and_events #events-flex-container iframe {
+    height: 400px;
+  }
+  #journey_ambassador_and_events #events-flex-container #ambassador-visit-img {
+    background: url(../img/summits/leaders_forum.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 300px) {
+  #journey_ambassador_and_events {
+    text-align: center;
+  }
+  #journey_ambassador_and_events iframe {
+    height: 300px;
+  }
 }
 
 #partners {
@@ -176,12 +204,12 @@
 
 #social {
   overflow-x: hidden;
-  background: url(../img/edmonton_bg.gif);
+  background: #f5f5f5;
   background-size: cover;
 }
 
 #social .instagram-container {
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -195,7 +223,7 @@
   transition: all 0.1s ease-in;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  color: white;
+  color: #26B3BF;
 }
 
 #social i:hover {

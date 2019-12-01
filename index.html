@@ -97,7 +97,7 @@
                     <h1>
                         For Young Leaders, <br> By Young Leaders
                     </h1>
-                    <hr>
+                    <hr class="my-5">
                 </div>
 
             </div>
@@ -153,31 +153,19 @@
 
     <div class="my-5"></div>
 
-    <!-- AMBASSADOR VISITS -->
     <section id="journey_ambassador_and_events" class="py-5">
-        <div class="overlay"></div>
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>VISION 2020</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <iframe style="width: 50%; height: 350px;" src="https://www.youtube.com/embed/kfGYMiwofbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>
-                            Leadership is a Mindset Summit <br>
-                            Edmonton EXPO Centre <br>
-                            April 7-8, 2020
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
+
+        <div class="my-5"></div>
+
+        <div class="container">
+            <div id="events-flex-container">
+                <div style="flex: 6;" class="events-flex-item my-5" id="vision-2020">
+                    <h1 class="py-3" style="color:#1EA8B4;font-family: Raleway; font-weight: bold; font-size: 65px">VISION2020</h1>
+                    <p>
+                        Leadership is a Mindset Summit <br>
+                        Edmonton EXPO Centre <br>
+                        April 7-8, 2020
+                    </p>
                     <div class="button-container">
                         <button class="btn btn-primary">
                             <a href="summits.html#summits">
@@ -185,125 +173,167 @@
                             </a>
                         </button>
                     </div>
+                    <div class="py-3"></div>
+                    <h3>Give The Gift of Leadership</h3>
+                    <div class="button-container">
+                        <button class="btn btn-primary">
+                            <a href="https://forms.gle/d9tRb8GSnrMrFvvU9" target="_blank">
+                                <div class="btn-text">Donate</div>
+                            </a>
+                        </button>
+                    </div>
+
                 </div>
+                <div style="flex: 6;" class="events-flex-item">
+                    <iframe style="width: 100%;" src="https://www.youtube.com/embed/kfGYMiwofbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
             </div>
         </div>
-        <div class="py-4"></div>
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>Ambassador Visits</h1>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        <p>
-                            Want to learn more about the leadership work that YL.W does? Want to find out more about
-                            upcoming
-                            Summits?
-                            Book a YoungLeaders.World student ambassador to come to your school for an assembly,
-                            classroom visit or
-                            school event. To find out more, fill in the information below.
-                            <p style="font-size: 16px;">
-                                *YoungLeaders.World ambassador visits are only available in the Capital Region of
-                                Alberta, Canada.
-                            </p>
 
+        <div class="container">
+            <div style="padding: 25px 0px 25px 0px;" class="my-5">
+                <hr>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="events-flex-container">
+                <div style="flex: 2;" class="events-flex-item">
+                    <div id="ambassador-visit-img"></div>
+                </div>
+                <div style="flex: 2;" class="events-flex-item">
+                    <h1 style="color:#1EA8B4;font-family: Raleway;font-size: 45px">Ambassador Visits</h1>
+                    <p>
+                        Want to learn more about the leadership work that YL.W does? Want to find out more about
+                        upcoming
+                        Summits?
+                        Book a YoungLeaders.World student ambassador to come to your school for an assembly,
+                        classroom visit or
+                        school event. To find out more, fill in the information below.
+                        <p style="font-size: 16px;">
+                            *YoungLeaders.World ambassador visits are only available in the Capital Region of
+                            Alberta, Canada.
                         </p>
-                    </div>
-                </div>
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#ambassadorVisit">
+                                <div class="btn-text">BOOK</div>
+                            </button>
+                            <!-- AMBASSADOR VISIT FORM -->
+                            <div class="modal" id="ambassadorVisit" data-backdrop="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-center">Ambassador Visit</h5>
+                                            <button class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="https://formspree.io/carla@youngleaders.world" method="POST">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input id="name" class="form-control" type="text" name="Name" placeholder="Name" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input id="email" class="form-control" type="email" name="Email" placeholder="Email" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input id="email" class="form-control" type="date" name="Preferred Date" placeholder="Preferred Date" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input type="text" id="city" class="form-control" name="City" placeholder="City" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input id="phone" class="form-control" type="text" name="School Name" placeholder="School Name" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input list="level" class="form-control" name="Education Level" placeholder="Education Level">
+                                                            <datalist id="level">
+                                                                <option value="Elementary School"></option>
+                                                                <option value="Junior High School"></option>
+                                                                <option value="High School"></option>
+                                                                <option value="University"></option>
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="form-group">
+                                                            <input type="text" id="number" class="form-control" name="Number Of People" placeholder="# of people">
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                <div class="d-flex justify-content-center">
-                    <div>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#ambassadorVisit">
-                            <div class="btn-text">BOOK</div>
-                        </button>
-                        <!-- AMBASSADOR VISIT FORM -->
-                        <div class="modal" id="ambassadorVisit" data-backdrop="false">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center">Ambassador Visit</h5>
-                                        <button class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="https://formspree.io/carla@youngleaders.world" method="POST">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group">
-                                                        <input id="name" class="form-control" type="text" name="Name" placeholder="Name" required />
-                                                    </div>
+                                                <div>
+                                                    <p>
+                                                        <span class="send-btn">
+                                                            <input id="btn" class="btn" type="submit" value="SEND" />
+                                                        </span>
+                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group">
-                                                        <input id="email" class="form-control" type="email" name="Email" placeholder="Email" required />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group">
-                                                        <input id="email" class="form-control" type="date" name="Preferred Date" placeholder="Preferred Date" required />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group">
-                                                        <input type="text" id="city" class="form-control" name="City" placeholder="City" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group">
-                                                        <input id="phone" class="form-control" type="text" name="School Name" placeholder="School Name" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group">
-                                                        <input list="level" class="form-control" name="Education Level" placeholder="Education Level">
-                                                        <datalist id="level">
-                                                            <option value="Elementary School"></option>
-                                                            <option value="Junior High School"></option>
-                                                            <option value="High School"></option>
-                                                            <option value="University"></option>
-                                                        </datalist>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="form-group">
-                                                        <input type="text" id="number" class="form-control" name="Number Of People" placeholder="# of people">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <p>
-                                                    <span class="send-btn">
-                                                        <input id="btn" class="btn" type="submit" value="SEND" />
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- AMBASSADOR VISIT FORM -->
                         </div>
-                        <!-- AMBASSADOR VISIT FORM -->
                     </div>
                 </div>
             </div>
+
+            <!-- <div class="row">
+                <div class="col">
+                    <h1>Ambassador Visits</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p>
+                        Want to learn more about the leadership work that YL.W does? Want to find out more about
+                        upcoming
+                        Summits?
+                        Book a YoungLeaders.World student ambassador to come to your school for an assembly,
+                        classroom visit or
+                        school event. To find out more, fill in the information below.
+                        <p style="font-size: 16px;">
+                            *YoungLeaders.World ambassador visits are only available in the Capital Region of
+                            Alberta, Canada.
+                        </p>
+
+                    </p>
+                </div>
+            </div> -->
+
+
         </div>
+
         <div class="py-4"></div>
-        <div class="row">
+
+        <!-- <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -331,9 +361,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
-
+            </div> -->
 
     </section>
     <!-- AMBASSADOR VISITS (END) -->
@@ -345,7 +373,7 @@
         <div class="container">
             <div class="text-center">
                 <h1>Organizations That Helped Us Grow</h1>
-                <hr>
+                <hr class="my-5">
             </div>
             <div class="d-flex flex-wrap justify-content-center mt-4">
                 <div class="partner-container">
@@ -389,12 +417,12 @@
 
     <!-- SOCIAL MEDIA -->
     <section id="social">
-        <div class="container mt-5 text-center">
-            <h1 style="color: white;">Follow Us!</h1>
-            <div style="border-color: white;" class="grey-line-and-margins"></div>
+        <div class="container pt-5 text-center">
+            <h1>Follow Us!</h1>
+            <hr class="my-5">
         </div>
 
-        <div class="container">
+        <div class="container pb-5">
             <div class="d-flex justify-content-center">
                 <div class="icon-container">
                     <a href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
