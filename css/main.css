@@ -11,7 +11,7 @@
 }
 
 .navbar .logo-container {
-  width: 140px;
+  width: 130px;
   margin-top: -20px;
   margin-bottom: -20px;
   -webkit-transition: all 1s cubic-bezier(0.61, 0.2, 0.43, 0.99);
@@ -168,4 +168,3 @@ body ul {
     margin: 5px;
   }
 }
-/*# sourceMappingURL=main.css.map */
