@@ -89,21 +89,28 @@ body iframe {
   position: relative;
 }
 
-#summits .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #F5F2F2;
-  border: #26b3bf solid 10px;
-  z-index: -1;
+#summits .vision2020 {
+  color: #4fbfc9;
+  font-size: 75px;
+  font-family: 'Raleway';
+  text-shadow: none;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #summits .vision2020 {
+    font-size: 50px;
+  }
 }
 
 #summits h1 {
   text-align: center;
-  color: white;
-  text-shadow: 3px 3px 10px black;
+  color: black;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #summits h1 {
+    font-size: 35px;
+  }
 }
 
 #summits h2 {
@@ -122,7 +129,6 @@ body iframe {
   font-size: 25px;
   text-align: center;
   color: white;
-  text-shadow: 3px 3px 10px black;
 }
 
 #summits #speaker-container-section .btn {
@@ -142,8 +148,7 @@ body iframe {
 }
 
 #summits #speaker-container-section .speaker-name {
-  text-shadow: 3px 3px 7px black;
-  color: white;
+  color: black;
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -170,7 +175,7 @@ body iframe {
 
 #summits #day-two-container-section a {
   text-decoration: none;
-  color: #26b3bf;
+  color: black;
   text-shadow: none;
 }
 
@@ -179,11 +184,13 @@ body iframe {
 }
 
 #summits #day-two-container-section p {
+  font-size: 20px;
   text-align: left;
-  padding-left: 20px;
 }
 
 #summits #day-two-container-section i {
+  color: #26b3bf;
+  margin-left: -20px;
   padding-right: 10px;
 }
 
@@ -198,9 +205,12 @@ body iframe {
   font-size: 14px;
 }
 
-#summits #speakers-container {
-  padding-left: 10px;
-  padding-right: 30px;
+#summits #day-two-container-section .card-header {
+  padding: 10px 0px 0px 30px;
+}
+
+#summits #day-two-container-section .card-body {
+  padding: 10px 10px 0px 0px;
 }
 
 #summits #speakers-container .img-container {
@@ -222,9 +232,8 @@ body iframe {
 }
 
 #summits #speakers-container .speaker-name-1 {
-  font-family: 'Roboto Slab', serif;
-  text-shadow: 3px 3px 7px black;
-  color: white;
+  font-family: 'Roboto Slab';
+  color: black;
   font-size: 20px;
   padding-top: 155px;
 }
@@ -254,23 +263,42 @@ body iframe {
   background-position: center;
 }
 
+#summits #event-details-container {
+  padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #summits #event-details-container {
+    padding: 0 0 0 0;
+  }
+}
+
+#summits #insights-from {
+  margin: 0;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #summits #insights-from {
+    margin-top: 50px;
+  }
+}
+
 #summits #paul-woida-container {
   position: relative;
 }
 
-#summits #paul-woida-container .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #F5F2F2;
-  border: #26b3bf solid 5px;
-  z-index: -1;
-}
-
 #summits #paul-woida-container .img-container {
   margin: 15px 0px 15px 15px;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #summits #paul-woida-container .img-container {
+    margin: 15px 0px 15px 0px;
+  }
+}
+
+#summits #paul-woida-container .img-container .img-fluid {
+  max-width: 100%;
 }
 
 #summits #paul-woida-container .beside-img-container {
