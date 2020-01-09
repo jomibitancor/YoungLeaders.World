@@ -1,5 +1,10 @@
 Vision -> Rectangle at the end of the 'leadership' line
+    Where are you going?
 Mission -> Arrows that animates towards the vision
+    What will keep you going?
 Values -> Fenceposts that bounces you back to your path when you try to swiggle around the path
+    What lines won't you cross?
 Strengths -> 
-Varriers -> Lines that can we can hurdle around
+    What will you bring with you?
+Barriers -> Lines that can we can hurdle around
+    What will you leave behind?
