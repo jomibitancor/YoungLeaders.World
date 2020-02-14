@@ -1,101 +1,87 @@
-#header .background-container {
-  background: #000 url(../img/forest_path.jpg) no-repeat;
-  background-size: cover;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
   height: 100vh;
-  background-position: center;
-  color: white;
-  position: relative;
-  z-index: 0;
-  background-attachment: fixed;
 }
 
-#header .background-container .background-overlay {
-  background: black;
-  opacity: 0.2;
+h1 {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-#introduction {
-  background: #F5F2F2;
-}
-
-#introduction p {
-  padding-top: 20px;
-}
-
-#leaders_journey {
-  background-color: #26b3bf;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%2326b3bf' width='11' height='11'/%3E%3Crect fill='%2326b1bd' x='10' width='11' height='11'/%3E%3Crect fill='%2325aeba' y='10' width='11' height='11'/%3E%3Crect fill='%2325acb8' x='20' width='11' height='11'/%3E%3Crect fill='%2324aab5' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%2324a7b3' y='20' width='11' height='11'/%3E%3Crect fill='%2323a5b0' x='30' width='11' height='11'/%3E%3Crect fill='%2323a3ae' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%2322a1ab' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23229ea9' y='30' width='11' height='11'/%3E%3Crect fill='%23229ca7' x='40' width='11' height='11'/%3E%3Crect fill='%23219aa4' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%232197a2' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%2320959f' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%2320939d' y='40' width='11' height='11'/%3E%3Crect fill='%231f919a' x='50' width='11' height='11'/%3E%3Crect fill='%231f8e98' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%231e8c96' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%231e8a93' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%231d8891' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%231d858f' y='50' width='11' height='11'/%3E%3Crect fill='%231d838c' x='60' width='11' height='11'/%3E%3Crect fill='%231c818a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%231c7f88' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%231b7d85' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%231b7b83' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%231a7881' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%231a767e' x='70' width='11' height='11'/%3E%3Crect fill='%2319747c' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%2319727a' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23187077' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23186e75' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23186b73' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23176971' x='80' width='11' height='11'/%3E%3Crect fill='%2317676e' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%2316656c' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%2316636a' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23156168' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23155f66' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23145d63' x='90' width='11' height='11'/%3E%3Crect fill='%23145b61' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%2313595f' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%2313575d' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%2313545b' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23125258' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23125056' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23114e54' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23114c52' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23104a50' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%2310484e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230f464c' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230f4449' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230e4247' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%230e4145' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%230d3f43' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%230d3d41' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%230c3b3f' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230c393d' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230b373b' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230b3539' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#leaders_journey .pillar-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#leaders_journey .pillar-container h1 {
-  font-family: 'Raleway', serif;
-  text-align: center;
-  color: white;
+  top: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white !important;
+  font-size: 100px;
+  font-family: 'Raleway' !important;
   text-transform: uppercase;
-}
-
-#leaders_journey .pillar-container h2 {
-  font-family: 'Roboto Slab', serif;
   text-align: center;
-  color: white;
 }
 
-#footer {
-  text-align: center;
-  color: white;
-  background: black;
+h1 p {
+  text-transform: initial;
 }
 
-@media (max-width: 766px) and (min-width: 300px) {
-  .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: #f0f0f0;
-    border: 1px solid #aaaaaa;
-    border-radius: 0.25rem;
-    margin-right: 20px;
-  }
-  .navbar-collapse {
-    margin-top: 20px;
-  }
-  .navbar .logo-container img {
-    margin-left: -20px;
-  }
-  .navbar .nav-item a {
-    text-align: left;
-    font: 1.5rem Raleway !important;
-    margin: 5px 5px !important;
-  }
-  body h1 {
-    text-align: center;
-    font-size: 50px;
-  }
-  #leaders_journey h1 {
-    font-size: 75px;
-  }
-  #leaders_journey h2 {
-    font-size: 30px;
-  }
-  #leaders_journey #strengths {
-    font-size: 50px;
-  }
-  #leaders_journey #barriers {
-    font-size: 60px;
-  }
-  #footer {
-    font-size: 0.9rem;
-  }
+#section2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  position: relative;
 }
+
+#parent-text-container {
+  position: relative;
+}
+
+#parent-text-container #container-1 {
+  padding-top: 70vh;
+}
+
+#parent-text-container #container-2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+#parent-text-container #container-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#parent-text-container #container-4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+#parent-text-container #container-5 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+
+#parent-text-container #container-6 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+#triangle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#arrow {
+  position: absolute;
+  left: 10%;
+}
+
+.description-container {
+  background: red;
+}
+/*# sourceMappingURL=leaders_journey.css.map */

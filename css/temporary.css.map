@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAEA,AAAA,CAAC,CAAA;EACG,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,qBAAqB;CACrC",
     "sources": [
-        "../scss/temporary.scss"
+        "scss/temporary.scss"
     ],
     "names": [],
     "file": "temporary.css"

@@ -263,6 +263,11 @@ body iframe {
   background-position: center;
 }
 
+#summits #speakers-container #chris {
+  background: url(../img/speakers/vision2020/chris.gif);
+  background-position: center;
+}
+
 #summits #event-details-container {
   padding: 10px 10px 10px 10px;
 }
@@ -521,3 +526,4 @@ body iframe {
     font: 1rem Raleway !important;
   }
 }
+/*# sourceMappingURL=summits.css.map */
