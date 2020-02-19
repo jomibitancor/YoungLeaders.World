@@ -167,6 +167,69 @@ body ul {
   list-style-type: none;
 }
 
+#countdown {
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#countdown div {
+  padding: 15px;
+}
+
+#countdown #days:after {
+  content: "Days";
+  font-size: 25px;
+}
+
+#countdown #hours:after {
+  content: "Hours";
+  font-size: 25px;
+}
+
+#countdown #mins:after {
+  content: "Minutes";
+  font-size: 25px;
+}
+
+#countdown #secs:after {
+  content: "Seconds";
+  font-size: 25px;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #countdown {
+    font-size: 30px;
+  }
+  #countdown div {
+    padding: 10px;
+  }
+  #countdown #days:after {
+    content: "Days";
+    font-size: 10px;
+  }
+  #countdown #hours:after {
+    content: "Hours";
+    font-size: 10px;
+  }
+  #countdown #mins:after {
+    content: "Minutes";
+    font-size: 10px;
+  }
+  #countdown #secs:after {
+    content: "Seconds";
+    font-size: 10px;
+  }
+}
+
 #footer {
   overflow-x: hidden;
   color: white;
