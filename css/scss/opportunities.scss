@@ -1,0 +1,125 @@
+$primary: #26b3bf;
+$gray: #F5F2F2;
+
+.navbar{
+    #navbar1{
+      a{
+        font-size: 18px;
+        padding-right: 0rem;
+        padding-left: 0rem;
+      }
+    }
+  }
+
+.navbar{
+    padding: 18px;
+    background: white;
+    transition: all 1s cubic-bezier(.61,.2,.43,.99);
+ 
+    .nav-item{
+        // padding-right: 2rem; make room for Ways To Give
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+
+    .logo-container{
+      width: 140px;
+      margin-top: -20px;
+      margin-bottom: -20px;
+      transition: all 1s cubic-bezier(.61,.2,.43,.99);
+
+      img{
+        width: 100%;
+      }
+    }
+
+    .nav-link{
+      transition: all 1s cubic-bezier(.61,.2,.43,.99);
+    }
+
+    a{
+      color: gray;
+      text-decoration: none;
+      font: 1.4rem Raleway;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+    }
+
+    
+
+    .topBotomBordersOut a:before, .topBotomBordersOut a:after
+    {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: $primary;
+        content: "";
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    .topBotomBordersOut a:before{
+        top: 0px;
+        transform: translateY(10px);
+    }
+
+    .topBotomBordersOut a:after{
+        bottom: 0px;
+        transform: translateY(-10px);
+    }
+
+    .topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#header{
+    .background-container{
+        background: #000 url(../img/student_working.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        color: white;
+        position: relative;
+        z-index: 0;
+        background-attachment: fixed;
+        
+        .background-overlay{
+            background: black; 
+            opacity: 0.2;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }    
+}
+
+#introduction{
+    font-size: 1.5rem;
+    background: $gray;
+    text-align: center;
+}
+
+#main-content{
+    background-color: #2ed7e6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2327b7c4' fill-opacity='0.55'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.55'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+
+    .position{
+        background: rgba(0, 0, 0, 0.5);
+        padding: 50px;
+        h2{
+            color: white;
+        }
+        h3{
+            font-size: 16px;
+            color: white;
+        }
+    }
+}

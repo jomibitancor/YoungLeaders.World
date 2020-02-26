@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+  // overflow-x: hidden;
+}
+.section{
+  height: 100vh;
+}
+
+h1{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white !important;
+  font-size: 100px;
+  font-family: 'Raleway' !important;
+  text-transform: uppercase;
+  text-align: center;
+  p{
+    text-transform: initial;
+  }
+}
+
+#section2{
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  position: relative;
+}
+
+
+#parent-text-container{
+  position: relative;
+
+  #container-1{
+    padding-top: 70vh;
+    // background: yellow;
+  }
+
+  #container-2{
+    position: absolute;
+    top: 40%;
+    left: 50%; 
+  }
+
+  #container-3{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+  }
+
+  #container-4{
+    position: absolute;
+    top: 60%;
+    left: 50%; 
+  }
+  #container-5{
+    position: absolute;
+    top: 70%;
+    left: 50%; 
+  }
+  #container-6{
+    position: absolute;
+    top: 80%;
+    left: 50%; 
+  }
+}
+
+#triangle{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#arrow{
+  position: absolute;
+  left: 10%;
+}
+
+.description-container{
+  background: red;
+}
+
+
+

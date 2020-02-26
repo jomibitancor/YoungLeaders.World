@@ -1,3 +1,9 @@
+.navbar #navbar1 a {
+  font-size: 18px;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+
 #mission_vision {
   font-size: 1.5rem;
   background: #f5f5f5;

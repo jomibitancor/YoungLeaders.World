@@ -1,3 +1,9 @@
+.navbar #navbar1 a {
+  font-size: 18px;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+
 #v-header {
   height: 100vh;
   display: -webkit-box;
