@@ -211,6 +211,15 @@ body iframe {
   font-size: 14px;
 }
 
+#summits #day-two-container-section .workshop-desc .workshop-logo {
+  width: 25%;
+  padding: 1rem;
+}
+
+#summits #day-two-container-section .workshop-desc .workshop-logo img {
+  width: 100%;
+}
+
 #summits #day-two-container-section .card-header {
   padding: 10px 0px 0px 30px;
 }
