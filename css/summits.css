@@ -95,6 +95,30 @@ body iframe {
   position: relative;
 }
 
+#summits #events-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#summits #events-flex-container iframe {
+  height: 400px;
+}
+
+#summits #events-flex-container #ambassador-visit-img {
+  background: url(../img/summits/leaders_forum.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 500px;
+}
+
 #summits .vision2020 {
   color: #4fbfc9;
   font-size: 75px;

@@ -101,6 +101,26 @@ body{
 #summits{
     position: relative;
 
+    #events-flex-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+  
+  
+        iframe{
+          height: 400px;
+        }
+  
+        #ambassador-visit-img{
+          background: url(../img/summits/leaders_forum.jpg);
+          // background-position: center;
+          background-size: cover;
+          height: 400px;
+          width: 500px;
+        }
+      }
+
     .vision2020{
         color: #4fbfc9; 
         font-size: 75px; 
