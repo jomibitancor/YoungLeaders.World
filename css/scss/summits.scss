@@ -602,3 +602,22 @@ body{
   }
 
 }
+
+
+//!  GOOD CSS
+.section-introduction{
+    font-family: 'Raleway', sans-serif;
+}
+#text-beside-pencil{
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        color: black;
+        text-shadow: none;
+    }
+    p{
+        color: black;
+        font-size: 1rem;
+    }
+}

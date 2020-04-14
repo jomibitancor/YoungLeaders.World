@@ -565,4 +565,22 @@ body iframe {
     font: 1rem Raleway !important;
   }
 }
+
+.section-introduction {
+  font-family: 'Raleway', sans-serif;
+}
+
+#text-beside-pencil h1 {
+  font-size: 35px;
+}
+
+#text-beside-pencil h3 {
+  color: black;
+  text-shadow: none;
+}
+
+#text-beside-pencil p {
+  color: black;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=summits.css.map */
