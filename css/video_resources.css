@@ -196,4 +196,9 @@ body p {
     font-size: 0.9rem;
   }
 }
+
+#modalSubscriptionForm a {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=video_resources.css.map */
