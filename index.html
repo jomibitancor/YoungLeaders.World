@@ -26,41 +26,28 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md fixed-top" style="padding: 18px;">
-        <div class="container-fluid">
-            <div class="logo-container">
-                <a href="index.html"><img src="img/ylwLogo.png" alt="logo" /></a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-                <span class="navbar-toggler-icon pt-1"> <i class="fa fa-bars fa-lg"></i> </span>
-            </button>
-            <div id="navbar1" class="collapse navbar-collapse container topBotomBordersOut">
-                <ul class="nav navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="speakers.html" class="nav-link">Speakers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="summits.html" class="nav-link">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="video_resources.html" class="nav-link">Video Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="ways_to_give.html" class="nav-link">Ways To Give</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="opportunities.html" class="nav-link">Opportunities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact Us</a>
-                    </li>
-                    
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2;">
+        <a class="navbar-brand" href="/index.html"><img width="75px" src="./img/ylwLogo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <ul class="navbar-nav mx-auto">
+                <a class="nav-item nav-link" href="/about.html">About Us</a>
+                <a class="nav-item nav-link" href="/speakers.html">Speakers</a>
+                <a class="nav-item nav-link" href="/summits.html">Events</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Others
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="/video_resources.html">Video Resources</a>
+                      <a class="dropdown-item" href="/ways_to_give.html">Ways To Give</a>
+                      <a class="dropdown-item" href="/opportunities.html">Opportunities</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="/contact.html">Contact Us</a>
+            </ul>
         </div>
     </nav>
     <!-- NAVBAR END -->
@@ -494,9 +481,9 @@
     <!-- FOOTER(END) -->
 
     <!--SCRIPTS-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- INITIALIZE TOOLTIP -->
     <script>
@@ -565,7 +552,8 @@
     <script type="text/javascript" src="js/scrolling_navbar.js"></script>
 
     <!-- COUNTDOWN TIMER -->
-    <script src="js/countdown.js"></script>
+    <!-- <script src="js/countdown.js"></script> -->
+
 
 </body>
 
